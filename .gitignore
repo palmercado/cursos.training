@@ -1,0 +1,5 @@
+htdocs/framework/*
+htdocs/cursos/assets/*
+htdocs/requirements/*
+htdocs/demos/*
+htdocs/cursos/protected/config/*
