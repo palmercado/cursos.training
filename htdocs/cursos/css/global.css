@@ -1,0 +1,13 @@
+/* 
+    Document   : global
+    Created on : 18-jul-2012, 12:53:14
+    Author     : juliobarreraa@gmail.com
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root {display: block;}
+.required{color: #f00;}
+input, textarea, select, .uneditable-input{width: auto;}
+.no-resize {resize: none;}
+.control-group.warning input, .control-group.warning select, .control-group.warning textarea {color: #888;}
