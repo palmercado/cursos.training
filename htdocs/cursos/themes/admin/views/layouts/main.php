@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Dashboard - Base Admin</title>
+    <title><?php echo Yii::app()->name ?> - <?php echo Yii::t( 'global', 'administrator') ?></title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">    
@@ -39,9 +39,7 @@
 				<span class="icon-bar"></span>
 			</a>
 			
-			<a class="brand" href="./">
-				Base Admin				
-			</a>		
+                        <?php echo CHtml::link(Yii::t( 'global', 'administrator' ), CHtml::normalizeUrl( array( '/admin/' ) ), array( 'class' => 'brand' ) ) ?>
 			
 			<div class="nav-collapse">
 				<ul class="nav pull-right">
@@ -49,15 +47,14 @@
 						
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 							<i class="icon-cog"></i>
-							Settings
+							<?php echo Yii::t( 'global', 'settings' ) ?>
 							<b class="caret"></b>
 						</a>
 						
 						<ul class="dropdown-menu">
-							<li><a href="javascript:;">Account Settings</a></li>
-							<li><a href="javascript:;">Privacy Settings</a></li>
+							<li><a href="javascript:;"><?php echo Yii::t( 'global', 'account_settings' ) ?></a></li>
 							<li class="divider"></li>
-							<li><a href="javascript:;">Help</a></li>
+							<li><a href="javascript:;"><?php echo Yii::t( 'global', 'help' ) ?></a></li>
 						</ul>
 						
 					</li>
@@ -66,22 +63,22 @@
 						
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 							<i class="icon-user"></i> 
-							Rod Howard
+							Julio César Barrera
 							<b class="caret"></b>
 						</a>
 						
 						<ul class="dropdown-menu">
-							<li><a href="javascript:;">My Profile</a></li>
-							<li><a href="javascript:;">My Groups</a></li>
+							<li><a href="javascript:;"><?php echo Yii::t( 'global', 'my_profile' ) ?></a></li>
+							<li><a href="javascript:;"><?php echo Yii::t( 'global', 'my_groups' ) ?></a></li>
 							<li class="divider"></li>
-							<li><a href="javascript:;">Logout</a></li>
+							<li><a href="javascript:;"><?php echo Yii::t( 'global', 'logout' ) ?></a></li>
 						</ul>
 						
 					</li>
 				</ul>
 			
 				<form class="navbar-search pull-right">
-					<input type="text" class="search-query" placeholder="Search">
+					<input type="text" class="search-query" placeholder="<?php echo Yii::t( 'global', 'search' ) ?>">
 				</form>
 				
 			</div><!--/.nav-collapse -->	
@@ -105,48 +102,63 @@
 			<ul class="mainnav">
 			
 				<li class="active">
-					<a href="./">
+					<a href="<?php echo CHtml::normalizeUrl( array( '/admin/' ) ) ?>">
 						<i class="icon-home"></i>
-						<span>Home</span>
+						<span><?php echo Yii::t( 'global', 'homepage' ) ?></span>
 					</a>	    				
 				</li>
 				
 				<li>
-					<a href="./faq.html">
-						<i class="icon-pushpin"></i>
-						<span>FAQ</span>
+                                        <a href="<?php echo CHtml::normalizeUrl( array( '/admin/categories/' ) ) ?>">
+						<i class="icon-book"></i>
+						<span><?php echo Yii::t( 'global', 'categories' ) ?></span>
+					</a>	    				
+				</li>
+                                
+				<li>
+                                        <a href="<?php echo CHtml::normalizeUrl( array( '/admin/courses/' ) ) ?>">
+						<i class="icon-book"></i>
+						<span><?php echo Yii::t( 'global', 'courses' ) ?></span>
+					</a>	    				
+				</li>
+                                
+				<li>
+					<a href="<?php echo CHtml::normalizeUrl( array( '/admin/members/' ) ) ?>">
+						<i class="icon-group"></i>
+						<span><?php echo Yii::t( 'global', 'students' ) ?></span>
+					</a>	    				
+				</li>
+                                
+				<li>
+					<a href="<?php echo CHtml::normalizeUrl( array( '/admin/members/' ) ) ?>">
+						<i class="icon-certificate"></i>
+						<span><?php echo Yii::t( 'global', 'instructors' ) ?></span>
 					</a>	    				
 				</li>
 				
 				<li>					
-					<a href="./pricing.html" class="dropdown-toggle">
-						<i class="icon-th-large"></i>
-						<span>Pricing Plans</span>
+					<a href="<?php echo CHtml::normalizeUrl( array( '/admin/payforms/' ) ) ?>" class="dropdown-toggle">
+						<i class="icon-credit-card"></i>
+						<span><?php echo Yii::t( 'global', 'payform' ) ?></span>
 					</a>	  				
 				</li>
 				
 				<li>
-					<a href="./reports.html">
+					<a href="<?php echo CHtml::normalizeUrl( array( '/admin/reports/' ) ) ?>">
 						<i class="icon-bar-chart"></i>
-						<span>Reports</span>
+						<span><?php echo Yii::t( 'global', 'reports' ) ?></span>
 					</a>    				
-				</li>
-				
-				<li>					
-					<a href="./guidely.html">
-						<i class="icon-facetime-video"></i>
-						<span>Guided Tour</span>
-					</a>  									
 				</li>
 				
 				<li class="dropdown">					
 					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
 						<i class="icon-share-alt"></i>
-						<span>More Pages</span>
+						<span><?php echo Yii::t( 'global', 'morepages' ) ?></span>
 						<b class="caret"></b>
 					</a>	
 				
 					<ul class="dropdown-menu">
+                                                <li><a href="<?php echo CHtml::normalizeUrl( array( '/admin/places/' ) ) ?>"><?php echo Yii::t( 'global', 'places' ) ?></a></li>
 						<li><a href="./charts.html">Charts</a></li>
 						<li><a href="./account.html">User Account</a></li>
 						<li class="divider"></li>
@@ -171,322 +183,6 @@
 
 	    <div class="container">
 	      <?php echo $content; ?>
-	
-	      <div class="row">
-	      	
-	      	<div class="span6">
-	      		
-	      		<div class="widget">
-						
-					<div class="widget-header">
-						<i class="icon-star"></i>
-						<h3>Quick Stats</h3>
-					</div> <!-- /widget-header -->
-					
-					<div class="widget-content">
-						
-						<div class="stats">
-							
-							<div class="stat">
-								<span class="stat-value">12,386</span>									
-								Site Visits
-							</div> <!-- /stat -->
-							
-							<div class="stat">
-								<span class="stat-value">9,249</span>									
-								Unique Visits
-							</div> <!-- /stat -->
-							
-							<div class="stat">
-								<span class="stat-value">70%</span>									
-								New Visits
-							</div> <!-- /stat -->
-							
-						</div> <!-- /stats -->
-						
-						
-						<div id="chart-stats" class="stats">
-							
-							<div class="stat stat-chart">							
-								<div id="donut-chart" class="chart-holder"></div> <!-- #donut -->							
-							</div> <!-- /substat -->
-							
-							<div class="stat stat-time">									
-								<span class="stat-value">00:28:13</span>
-								Average Time on Site
-							</div> <!-- /substat -->
-							
-						</div> <!-- /substats -->
-						
-					</div> <!-- /widget-content -->
-						
-				</div> <!-- /widget -->	
-				
-				
-				<div class="widget widget-nopad">
-							
-					<div class="widget-header">
-						<i class="icon-list-alt"></i>
-						<h3>Recent News</h3>
-					</div> <!-- /widget-header -->
-					
-					<div class="widget-content">
-						
-						<ul class="news-items">
-							<li>
-								
-								<div class="news-item-detail">										
-									<a href="javascript:;" class="news-item-title">Duis aute irure dolor in reprehenderit</a>
-									<p class="news-item-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-								</div>
-								
-								<div class="news-item-date">
-									<span class="news-item-day">08</span>
-									<span class="news-item-month">Mar</span>
-								</div>
-							</li>
-							<li>
-								<div class="news-item-detail">										
-									<a href="javascript:;" class="news-item-title">Duis aute irure dolor in reprehenderit</a>
-									<p class="news-item-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-								</div>
-								
-								<div class="news-item-date">
-									<span class="news-item-day">08</span>
-									<span class="news-item-month">Mar</span>
-								</div>
-							</li>
-							<li>
-								<div class="news-item-detail">										
-									<a href="javascript:;" class="news-item-title">Duis aute irure dolor in reprehenderit</a>
-									<p class="news-item-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-								</div>
-								
-								<div class="news-item-date">
-									<span class="news-item-day">08</span>
-									<span class="news-item-month">Mar</span>
-								</div>
-							</li>
-						</ul>
-						
-					</div> <!-- /widget-content -->
-				
-				</div> <!-- /widget -->	
-						
-											
-				<div class="widget">
-					
-					<div class="widget-header">
-						<i class="icon-file"></i>
-						<h3>Content</h3>
-					</div> <!-- /widget-header -->
-					
-					<div class="widget-content">
-						
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						
-						
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>					
-						
-					</div> <!-- /widget-content -->
-				
-				</div> <!-- /widget -->
-	      		
-		    </div> <!-- /span6 -->
-	      	
-	      	
-	      	<div class="span6">	
-	      		
-	      		
-	      		<div class="widget">
-						
-					<div class="widget-header">
-						<i class="icon-bookmark"></i>
-						<h3>Quick Shortcuts</h3>
-					</div> <!-- /widget-header -->
-					
-					<div class="widget-content">
-						
-						<div class="shortcuts">
-							<a href="javascript:;" class="shortcut">
-								<i class="shortcut-icon icon-list-alt"></i>
-								<span class="shortcut-label">Apps</span>
-							</a>
-							
-							<a href="javascript:;" class="shortcut">
-								<i class="shortcut-icon icon-bookmark"></i>
-								<span class="shortcut-label">Bookmarks</span>								
-							</a>
-							
-							<a href="javascript:;" class="shortcut">
-								<i class="shortcut-icon icon-signal"></i>
-								<span class="shortcut-label">Reports</span>	
-							</a>
-							
-							<a href="javascript:;" class="shortcut">
-								<i class="shortcut-icon icon-comment"></i>
-								<span class="shortcut-label">Comments</span>								
-							</a>
-							
-							<a href="javascript:;" class="shortcut">
-								<i class="shortcut-icon icon-user"></i>
-								<span class="shortcut-label">Users</span>
-							</a>
-							
-							<a href="javascript:;" class="shortcut">
-								<i class="shortcut-icon icon-file"></i>
-								<span class="shortcut-label">Notes</span>	
-							</a>
-							
-							<a href="javascript:;" class="shortcut">
-								<i class="shortcut-icon icon-picture"></i>
-								<span class="shortcut-label">Photos</span>	
-							</a>
-							
-							<a href="javascript:;" class="shortcut">
-								<i class="shortcut-icon icon-tag"></i>
-								<span class="shortcut-label">Tags</span>
-							</a>				
-						</div> <!-- /shortcuts -->	
-					
-					</div> <!-- /widget-content -->
-					
-				</div> <!-- /widget -->
-	      		
-	      		
-						
-						
-				<div class="widget">
-						
-					<div class="widget-header">
-						<i class="icon-signal"></i>
-						<h3>Chart</h3>
-					</div> <!-- /widget-header -->
-					
-					<div class="widget-content">					
-						<div id="area-chart" class="chart-holder"></div>					
-					</div> <!-- /widget-content -->
-				
-				</div> <!-- /widget -->
-						
-						
-						
-						
-				<div class="widget widget-table action-table">
-						
-					<div class="widget-header">
-						<i class="icon-th-list"></i>
-						<h3>Table</h3>
-					</div> <!-- /widget-header -->
-					
-					<div class="widget-content">
-						
-						<table class="table table-striped table-bordered">
-							<thead>
-								<tr>
-									<th>Engine</th>
-									<th>Browser</th>
-									<th class="td-actions"></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Trident</td>
-									<td>Internet
-										 Explorer 4.0</td>
-									<td class="td-actions">
-										<a href="javascript:;" class="btn btn-small btn-warning">
-											<i class="btn-icon-only icon-ok"></i>										
-										</a>
-										
-										<a href="javascript:;" class="btn btn-small">
-											<i class="btn-icon-only icon-remove"></i>										
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td>Trident</td>
-									<td>Internet
-										 Explorer 5.0</td>
-									<td class="td-actions">
-										<a href="javascript:;" class="btn btn-small btn-warning">
-											<i class="btn-icon-only icon-ok"></i>										
-										</a>
-										
-										<a href="javascript:;" class="btn btn-small">
-											<i class="btn-icon-only icon-remove"></i>										
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td>Trident</td>
-									<td>Internet
-										 Explorer 5.5</td>
-									<td class="td-actions">
-										<a href="javascript:;" class="btn btn-small btn-warning">
-											<i class="btn-icon-only icon-ok"></i>										
-										</a>
-										
-										<a href="javascript:;" class="btn btn-small">
-											<i class="btn-icon-only icon-remove"></i>										
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td>Trident</td>
-									<td>Internet
-										 Explorer 5.5</td>
-									<td class="td-actions">
-										<a href="javascript:;" class="btn btn-small btn-warning">
-											<i class="btn-icon-only icon-ok"></i>										
-										</a>
-										
-										<a href="javascript:;" class="btn btn-small">
-											<i class="btn-icon-only icon-remove"></i>										
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td>Trident</td>
-									<td>Internet
-										 Explorer 5.5</td>
-									<td class="td-actions">
-										<a href="javascript:;" class="btn btn-small btn-warning">
-											<i class="btn-icon-only icon-ok"></i>										
-										</a>
-										
-										<a href="javascript:;" class="btn btn-small">
-											<i class="btn-icon-only icon-remove"></i>										
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td>Trident</td>
-									<td>Internet
-										 Explorer 5.5</td>
-									<td class="td-actions">
-										<a href="javascript:;" class="btn btn-small btn-warning">
-											<i class="btn-icon-only icon-ok"></i>										
-										</a>
-										
-										<a href="javascript:;" class="btn btn-small">
-											<i class="btn-icon-only icon-remove"></i>										
-										</a>
-									</td>
-								</tr>
-								</tbody>
-							</table>
-						
-					</div> <!-- /widget-content -->
-				
-				</div> <!-- /widget -->
-									
-		      </div> <!-- /span6 -->
-	      	
-	      </div> <!-- /row -->
-	
 	    </div> <!-- /container -->
 	    
 	</div> <!-- /main-inner -->
@@ -505,52 +201,36 @@
 				
     			<div class="span3">
     				
-    				<h4>About</h4>
+    				<h4><?php echo Yii::t( 'global', 'about' ) ?></h4>
     				
     				<ul>
-    					<li><a href="javascript:;">About Us</a></li>
-    					<li><a href="javascript:;">Twitter</a></li>
-    					<li><a href="javascript:;">Facebook</a></li>
-    					<li><a href="javascript:;">Google+</a></li>
+    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'about_us' ) ?></a></li>
+    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'twitter' ) ?></a></li>
+    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'facebook' ) ?></a></li>
+    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'google_plus' ) ?></a></li>
     				</ul>
     				
     			</div> <!-- /span3 -->
     			
     			<div class="span3">
     				
-    				<h4>Support</h4>
+    				<h4><?php echo Yii::t( 'global', 'support' ) ?></h4>
     				
     				<ul>
-    					<li><a href="javascript:;">Frequently Asked Questions</a></li>
-    					<li><a href="javascript:;">Ask a Question</a></li>
-    					<li><a href="javascript:;">Video Tutorial</a></li>
-    					<li><a href="javascript:;">Feedback</a></li>
+    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'faq' ) ?></a></li>
+    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'submit_ticket' ) ?></a></li>
     				</ul>
     				
     			</div> <!-- /span3 -->
     			
     			<div class="span3">
     				
-    				<h4>Legal</h4>
+    				<h4><?php echo Yii::t( 'global', 'legal' ) ?></h4>
     				
     				<ul>
-    					<li><a href="javascript:;">License</a></li>
-    					<li><a href="javascript:;">Terms of Use</a></li>
-    					<li><a href="javascript:;">Privacy Policy</a></li>
-    					<li><a href="javascript:;">Security</a></li>
-    				</ul>
-    				
-    			</div> <!-- /span3 -->
-    			
-    			<div class="span3">
-    				
-    				<h4>Settings</h4>
-    				
-    				<ul>
-    					<li><a href="javascript:;">Consectetur adipisicing</a></li>
-    					<li><a href="javascript:;">Eiusmod tempor </a></li>
-    					<li><a href="javascript:;">Fugiat nulla pariatur</a></li>
-    					<li><a href="javascript:;">Officia deserunt</a></li>
+    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'licence' ) ?></a></li>
+    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'tos' ) ?></a></li>
+    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'policy' ) ?></a></li>
     				</ul>
     				
     			</div> <!-- /span3 -->
@@ -575,7 +255,7 @@
 			<div class="row">
 				
     			<div class="span12">
-    				&copy; 2012 <a href="http://bootstrapadmin.com">Base Admin</a>.
+    				<?php echo sprintf( Yii::t( 'global', 'copyright' ), date( 'Y' ) ) ?>.
     			</div> <!-- /span12 -->
     			
     		</div> <!-- /row -->

@@ -13,6 +13,16 @@ class AdminModule extends CWebModule
 			'admin.components.*',
 		));
 		Yii::app()->theme = 'admin';
+                Yii::app()->setComponents(     array
+                                               (
+                                                    'messages' => array
+                                                                  (
+                                                                        'class'         =>'CPhpMessageSource',
+                                                                        'basePath'      =>'protected/modules/admin/messages',
+                                                                   ),
+                                               )
+                                          );
+
 	}
 
 	public function beforeControllerAction($controller, $action)
