@@ -55,6 +55,8 @@ return array(
     'support_contact'  => 'Contácto de soporte',
     'oops'             => '¡Oops!',
     'error_404'        => 'Lo sentimos, un error ocurrió, ¡La página solicitada no existe!',
-    'description_error'=> 'Error %s'
+    'description_error'=> 'Error %s',
+    'yes'			   => 'Si',
+    'no'			   => 'No',
 );
 ?>
