@@ -48,7 +48,7 @@ class Courses extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('category_id, name, description, place_id, created_at', 'required'),
-			array('name, enabled', 'numerical', 'integerOnly'=>true),
+			array('enabled', 'numerical', 'integerOnly'=>true),
 			array('category_id, place_id', 'length', 'max'=>11),
 			array('created_at, updated_at', 'length', 'max'=>10),
 			array('target', 'safe'),
@@ -150,7 +150,7 @@ class Courses extends CActiveRecord
             return CHtml::listData( self::model( 'places' )->findAll(), 'id', 'description');
         }
         
-        public function onBeforeSave($event) {
+        public function onBeforeValidate($event) {
             //Se crea la fecha con el timestamp actual, si es un nuevo registro, en caso contrario se actualiza el valor de $this->update_at
             if( ! $this->getIsNewRecord() )
             {
@@ -160,6 +160,6 @@ class Courses extends CActiveRecord
             {
                 $this->created_at = time();
             }
-            return parent::onBeforeSave($event);
+            return parent::onBeforeValidate($event);
         }
 }

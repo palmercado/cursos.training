@@ -6,10 +6,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Courses', 'url'=>array('index')),
-	array('label'=>'Create Courses', 'url'=>array('create')),
-	array('label'=>'View Courses', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Courses', 'url'=>array('admin')),
+	array('label'=> Yii::t( 'courses', 'list' ), 'url'=>array('index'), 'class' => 'icon-list'),
+	array('label'=> Yii::t( 'courses', 'create' ), 'url'=>array('create'), 'class' => 'icon-plus'),
+	array('label'=> Yii::t( 'courses', 'view' ), 'url'=>array('view', 'id'=>$model->id), 'class' => 'icon-eye-open'),
+	array('label'=> Yii::t( 'courses', 'manage' ), 'url'=>array('admin'), 'class' => 'icon-wrench'),
 );
 ?>
 
