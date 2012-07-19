@@ -137,7 +137,7 @@
 					</a>	    				
 				</li>
 				
-				<li class="<?php echo ( $this->getAction()->getController()->id == 'payform' ? 'active' : '' ) ?>">					
+				<li class="<?php echo ( $this->getAction()->getController()->id == 'payforms' ? 'active' : '' ) ?>">					
 					<a href="<?php echo CHtml::normalizeUrl( array( '/admin/payforms/' ) ) ?>" class="dropdown-toggle">
 						<i class="icon-credit-card"></i>
 						<span><?php echo Yii::t( 'global', 'payform' ) ?></span>
