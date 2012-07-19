@@ -33,5 +33,6 @@ return array(
     'id'                                        => 'Clave',
     'view'                                      => 'Categoría %s',
     'update_title'                              => 'Actualizando la categoría %s',
+    'manage'                                    => 'Administrar',
 );
 ?>

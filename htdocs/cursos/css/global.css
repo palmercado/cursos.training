@@ -11,3 +11,4 @@ root {display: block;}
 input, textarea, select, .uneditable-input{width: auto;}
 .no-resize {resize: none;}
 .control-group.warning input, .control-group.warning select, .control-group.warning textarea {color: #888;}
+button.btn, input.btn[type="submit"]{width: 100%;}

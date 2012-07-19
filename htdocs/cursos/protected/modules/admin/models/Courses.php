@@ -139,4 +139,27 @@ class Courses extends CActiveRecord
                 return 'warning';
             }
         }
+        
+        public function getCategories()
+        {
+            return CHtml::listData( self::model( 'categories' )->findAll(), 'id', 'name' );
+        }
+        
+        public function getPlaces()
+        {
+            return CHtml::listData( self::model( 'places' )->findAll(), 'id', 'description');
+        }
+        
+        public function onBeforeSave($event) {
+            //Se crea la fecha con el timestamp actual, si es un nuevo registro, en caso contrario se actualiza el valor de $this->update_at
+            if( ! $this->getIsNewRecord() )
+            {
+                $this->updated_at = time();
+            }
+            else
+            {
+                $this->created_at = time();
+            }
+            return parent::onBeforeSave($event);
+        }
 }

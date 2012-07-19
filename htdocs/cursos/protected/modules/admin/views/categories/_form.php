@@ -5,13 +5,13 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 	<div class="alert alert-info"><?php echo Yii::t( 'global', 'fields_required' ) ?></div>
-	<div class='alert alert-error' style='display: <?php echo ( $model->hasErrors() ? 'block' : 'none' ) ?>;'><?php echo $form->errorSummary($model); ?></div>
+	<div class='alert alert-error' style='display: <?php echo $model->isDisplayErrors() ?>;'><?php echo $form->errorSummary($model); ?></div>
 
-	<div class="control-group <?php echo $model->hasErrors( 'name' ) ? 'error' : 'warning' ?>">
+	<div class="control-group <?php echo $model->isError( 'name' ) ?>">
 		<?php echo $form->textField($model,'name',array('size'=>62,'maxlength'=>50, 'placeholder' => Yii::t( 'categories', 'name' ) ) ); ?>
 	</div>
 
-	<div class="control-group <?php echo $model->hasErrors( 'description' ) ? 'error' : 'warning' ?>">
+	<div class="control-group <?php echo $model->isError( 'description' ) ?>">
 		<?php echo $form->textArea($model,'description',array('cols' => 60, 'rows' => 4, 'placeholder' => Yii::t( 'categories', 'description' ), 'class'  => 'no-resize' )); ?>
 	</div>
 

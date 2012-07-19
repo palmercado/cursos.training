@@ -7,9 +7,10 @@ return array(
           'name'                                => 'Nombre',
           'description'                         => 'Descripción',
           'target'                              => 'Objetivo del curso',
-          'place'                               => 'Lugar',
+          'place'                               => 'Seleccione lugar',
           'enabled'                             => 'Aprobado',
           'list'                                => 'Lista',
           'id'                                  => 'Clave',
           'update'                              => 'Actualizar',
+          'create_place'                        => 'Crear una ubicación',
 );

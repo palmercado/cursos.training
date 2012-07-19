@@ -10,23 +10,24 @@
 	<div class="alert alert-error" style="display: <?php echo $model->isDisplayErrors() ?>;"><?php echo $form->errorSummary($model); ?></div>
 
 	<div class="control-group <?php echo $model->isError( 'category_id' ) ?>">
-		<?php echo $form->textField($model,'category_id',array('size'=>11,'maxlength'=>11, 'placeholder' => $model->getAttributeLabel( 'category_id' ) )); ?>
+		<?php echo $form->dropDownList($model,'category_id', $model->getCategories(), array( 'style' => 'width: 568px;', 'prompt' => $model->getAttributeLabel( 'category_id' ) )); ?>
 	</div>
 
 	<div class="control-group <?php echo $model->isError( 'name' ) ?>">
-		<?php echo $form->textField($model,'name', array( 'placeholder' => $model->getAttributeLabel( 'name' ) )); ?>
+		<?php echo $form->textField($model,'name', array( 'size' => 78, 'placeholder' => $model->getAttributeLabel( 'name' ) )); ?>
 	</div>
 
 	<div class="control-group <?php echo $model->isError( 'description' ) ?>">
-		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50, 'placeholder' => $model->getAttributeLabel( 'description' ), 'class' => 'no-resize' )); ?>
+		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=> 76, 'placeholder' => $model->getAttributeLabel( 'description' ), 'class' => 'no-resize' )); ?>
 	</div>
 
 	<div class="control-group">
-		<?php echo $form->textArea($model,'target',array('rows'=>6, 'cols'=>50, 'placeholder' => $model->getAttributeLabel( 'target' ), 'class'   => 'no-resize' )); ?>
+		<?php echo $form->textArea($model,'target',array('rows'=>6, 'cols'=>76, 'placeholder' => $model->getAttributeLabel( 'target' ), 'class'   => 'no-resize' )); ?>
 	</div>
 
 	<div class="control-group <?php echo $model->isError( 'place_id' ) ?>">
-		<?php echo $form->textField($model,'place_id',array('size'=>11,'maxlength'=>11, 'placeholder' => $model->getAttributeLabel( 'place_id' ) )); ?>
+		<?php echo $form->dropDownList($model,'place_id', $model->getPlaces(), array('style' => 'width: 420px', 'prompt' => $model->getAttributeLabel( 'place_id' ) )); ?>
+                &nbsp;<span><i class='icon-plus'></i><?php echo CHtml::link( Yii::t( 'courses', 'create_place' ), array( '/admin/places' ) ) ?></span>
 	</div>
 
 	<div class="control-group">

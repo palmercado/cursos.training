@@ -6,10 +6,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Categories', 'url'=>array('index')),
-	array('label'=>'Create Categories', 'url'=>array('create')),
-	array('label'=>'View Categories', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Categories', 'url'=>array('admin')),
+	array('label'=> Yii::t( 'categories', 'list' ), 'url'=>array('index')),
+	array('label'=> Yii::t( 'categories', 'create' ), 'url'=>array('create')),
+	array('label'=> Yii::t( 'categories', 'title' ), 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=> Yii::t( 'categories', 'manage' ), 'url'=>array('admin')),
 );
 ?>
 
