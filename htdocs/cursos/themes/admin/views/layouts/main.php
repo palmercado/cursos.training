@@ -64,7 +64,7 @@
 						
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 							<i class="icon-user"></i> 
-							Julio César Barrera
+							<?php echo Yii::app()->user->name ?>
 							<b class="caret"></b>
 						</a>
 						
@@ -72,7 +72,7 @@
 							<li><a href="javascript:;"><?php echo Yii::t( 'global', 'my_profile' ) ?></a></li>
 							<li><a href="javascript:;"><?php echo Yii::t( 'global', 'my_groups' ) ?></a></li>
 							<li class="divider"></li>
-							<li><a href="javascript:;"><?php echo Yii::t( 'global', 'logout' ) ?></a></li>
+							<?php if( ! Yii::app()->user->isGuest ): ?><li><a href="javascript:;"><?php echo CHtml::link( Yii::t( 'global', 'logout' ), CHtml::normalizeUrl( array( '/admin/default/logout' ) ) ) ?></a></li><?php endif ?>
 						</ul>
 						
 					</li>
