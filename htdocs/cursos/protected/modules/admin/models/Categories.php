@@ -91,4 +91,30 @@ class Categories extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+        
+        
+        public function isDisplayErrors()
+        {
+            if( $this->hasErrors() )
+            {
+                return 'block';
+            }
+            else
+            {
+                return 'none';
+            }
+        }
+        
+        
+        public function isError( $field )
+        {
+            if( $this->hasErrors( $field ) )
+            {
+                return 'error';
+            }
+            else
+            {
+                return 'warning';
+            }
+        }
 }

@@ -23,7 +23,7 @@ $this->beginContent('//layouts/main'); ?>
             <div class='span6'>
 		<?php echo $content; ?>
             </div>
-            <div class='span4'>
+            <div class='span5'>
                 <?php
                         $this->widget('CMenu', array(
                                 'items'=>$this->menu,

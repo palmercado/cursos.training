@@ -5,8 +5,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=> Yii::t( 'categories', 'list' ), 'url'=>array('index')),
-	array('label'=> Yii::t( 'categories', 'admin' ), 'url'=>array('admin')),
+	array('label'=> Yii::t( 'categories', 'list' ), 'url'=>array('index'), 'class' =>  'icon-list' ),
+	array('label'=> Yii::t( 'categories', 'admin' ), 'url'=>array('admin'), 'class' => 'icon-wrench' ),
 );
 ?>
 
