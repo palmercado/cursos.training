@@ -162,4 +162,17 @@ class Courses extends CActiveRecord
             }
             return parent::onBeforeValidate($event);
         }
+
+	
+	public function getEnabled()
+	{
+		if( $this->enabled )
+		{
+			return Yii::t( 'global', 'yes' );
+		}
+		else
+		{
+			return Yii::t( 'global', 'no' );
+		}
+	}
 }

@@ -25,7 +25,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('enabled')); ?>:</b>
-	<?php echo CHtml::encode($data->enabled); ?>
+	<?php echo CHtml::encode($data->getEnabled()); ?>
 	<br />
 
 	<?php /*
