@@ -87,6 +87,8 @@ class Courses extends CActiveRecord
 			'enabled' => Yii::t( 'courses', 'enabled' ),
 			'created_at' => '',
 			'updated_at' => '',
+                        'getCategory'=> Yii::t( 'courses', 'category' ),
+                        'getPlace'=> Yii::t( 'courses', 'place' ),
 		);
 	}
 
@@ -175,4 +177,5 @@ class Courses extends CActiveRecord
 			return Yii::t( 'global', 'no' );
 		}
 	}
+        
 }

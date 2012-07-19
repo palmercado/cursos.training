@@ -15,17 +15,27 @@ $this->menu=array(
 
 <h2><?php echo sprintf( Yii::t( 'courses', 'title_view' ), $model->name ) ?></h2>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'id',
-		'category_id',
-		'name',
-		'description',
-		'target',
-		'place_id',
-		'enabled',
-		'created_at',
-		'updated_at',
-	),
-)); ?>
+<table class='table table-bordered'>
+    <thead>
+        <tr>
+            <th><?php echo CHtml::encode( $model->getAttributeLabel( 'id' ) ) ?></th>
+            <th><?php echo CHtml::encode( $model->getAttributeLabel( 'getCategory' ) ) ?></th>
+            <th><?php echo CHtml::encode( $model->getAttributeLabel( 'name' ) ) ?></th>
+            <th><?php echo CHtml::encode( $model->getAttributeLabel( 'description' ) ) ?></th>
+            <th><?php echo CHtml::encode( $model->getAttributeLabel( 'target' ) ) ?></th>
+            <th><?php echo CHtml::encode( $model->getAttributeLabel( 'getPlace' ) ) ?></th>
+            <th><?php echo CHtml::encode( $model->getAttributeLabel( 'enabled' ) ) ?></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><?php echo CHtml::encode( $model->id ) ?></td>
+            <td><?php echo CHtml::encode( $model->category->name ) ?></td>
+            <td><?php echo CHtml::encode( $model->name ) ?></td>
+            <td><?php echo CHtml::encode( $model->description ) ?></td>
+            <td><?php echo CHtml::encode( $model->target ) ?></td>
+            <td><?php echo CHtml::encode( $model->place->description ) ?></td>
+            <td><?php echo CHtml::encode( $model->getEnabled() ) ?></td>
+        </tr>
+    </tbody>
+</table>

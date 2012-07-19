@@ -16,4 +16,6 @@ return array(
           'delete'                              => 'Eliminar',
           'title_view'                          => 'Curso <b>%s</b>',
           'view'                                => 'Ver',
+          'category'                            => 'Categoría',
+          'place'                               => 'Lugar',
 );
