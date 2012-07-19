@@ -73,7 +73,7 @@
 				</div> <!-- /error-details -->
 				
 				<div class="error-actions">
-					<a href="./" class="btn btn-large btn-primary">
+					<a href="<?php echo CHtml::normalizeUrl( array( '/admin/' ) ) ?>" class="btn btn-large btn-primary">
 						<i class="icon-chevron-left"></i>
 						&nbsp;
 						<?php echo Yii::t( 'global', 'backdashboard' ) ?>
