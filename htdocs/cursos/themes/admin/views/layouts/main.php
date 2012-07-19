@@ -205,10 +205,10 @@
     				<h4><?php echo Yii::t( 'global', 'about' ) ?></h4>
     				
     				<ul>
-    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'about_us' ) ?></a></li>
-    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'twitter' ) ?></a></li>
-    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'facebook' ) ?></a></li>
-    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'google_plus' ) ?></a></li>
+                                        <li><i class='icon-group'></i>&nbsp;<a href="javascript:;"><?php echo Yii::t( 'global', 'about_us' ) ?></a></li>
+    					<li><i class='icon-twitter'></i>&nbsp;<a href="<?php echo Yii::app()->params->networks[ 'twitter' ] ?>"><?php echo Yii::t( 'global', 'twitter' ) ?></a></li>
+    					<li><i class='icon-facebook'></i>&nbsp;<a href="<?php echo Yii::app()->params->networks[ 'facebook' ] ?>"><?php echo Yii::t( 'global', 'facebook' ) ?></a></li>
+    					<li><i class='icon-google-plus'></i>&nbsp;<a href="javascript:;"><?php echo Yii::t( 'global', 'google_plus' ) ?></a></li>
     				</ul>
     				
     			</div> <!-- /span3 -->
