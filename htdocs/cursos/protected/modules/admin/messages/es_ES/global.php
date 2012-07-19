@@ -49,5 +49,15 @@ return array(
     'help'             => 'Ayuda',
     'my_profile'       => 'Mi perfil',
     'my_groups'        => 'Mis grupos',
+    'fields_required'  => 'Campos enmarcados en dorado son requeridos',
+    'error_not_found'  => 'Página no encontrada',
+    'backdashboard'    => 'Regresar al tablero',
+    'support_contact'  => 'Contácto de soporte',
+    'oops'             => '¡Oops!',
+    'error_404'        => 'Lo sentimos, un error ocurrió, ¡La página solicitada no existe!',
+    'description_error'=> 'Error %s',
+    'yes'              => 'Si',
+    'no'               => 'No',
+    'operations'       => 'Operaciones',
 );
 ?>

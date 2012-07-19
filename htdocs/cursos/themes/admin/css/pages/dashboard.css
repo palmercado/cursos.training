@@ -25,7 +25,7 @@
 */
 
 .shortcuts {
-	text-align: center;	
+	text-align: left;	
 }
 
 .shortcuts .shortcut { 
@@ -40,6 +40,7 @@
 	background: #F3F3F3;
 	
 	border-radius: 5px;
+        text-align: center;
 }
 
 .shortcuts .shortcut .shortcut-icon {

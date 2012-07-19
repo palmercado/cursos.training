@@ -17,6 +17,7 @@
     <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/base-admin-responsive.css" rel="stylesheet">
     
     <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/pages/dashboard.css" rel="stylesheet">   
+    <link href="<?php echo Yii::app()->baseUrl; ?>/css/global.css" rel="stylesheet">   
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -100,50 +101,50 @@
 		<div class="container">
 
 			<ul class="mainnav">
-			
-				<li class="active">
+
+				<li class="<?php echo ( $this->getAction()->getController()->id == 'default' ? 'active' : '' ) ?>">
 					<a href="<?php echo CHtml::normalizeUrl( array( '/admin/' ) ) ?>">
 						<i class="icon-home"></i>
 						<span><?php echo Yii::t( 'global', 'homepage' ) ?></span>
 					</a>	    				
 				</li>
-				
-				<li>
+                                
+				<li class="<?php echo ( $this->getAction()->getController()->id == 'categories' ? 'active' : '' ) ?>">
                                         <a href="<?php echo CHtml::normalizeUrl( array( '/admin/categories/' ) ) ?>">
 						<i class="icon-book"></i>
 						<span><?php echo Yii::t( 'global', 'categories' ) ?></span>
-					</a>	    				
+					</a>
 				</li>
                                 
-				<li>
+				<li class="<?php echo ( $this->getAction()->getController()->id == 'courses' ? 'active' : '' ) ?>">
                                         <a href="<?php echo CHtml::normalizeUrl( array( '/admin/courses/' ) ) ?>">
 						<i class="icon-book"></i>
 						<span><?php echo Yii::t( 'global', 'courses' ) ?></span>
 					</a>	    				
 				</li>
                                 
-				<li>
+				<li class="<?php echo ( $this->getAction()->getController()->id == 'members' ? 'active' : '' ) ?>">
 					<a href="<?php echo CHtml::normalizeUrl( array( '/admin/members/' ) ) ?>">
 						<i class="icon-group"></i>
 						<span><?php echo Yii::t( 'global', 'students' ) ?></span>
 					</a>	    				
 				</li>
                                 
-				<li>
+				<li class="<?php echo ( $this->getAction()->getController()->id == 'members' ? 'active' : '' ) ?>">
 					<a href="<?php echo CHtml::normalizeUrl( array( '/admin/members/' ) ) ?>">
 						<i class="icon-certificate"></i>
 						<span><?php echo Yii::t( 'global', 'instructors' ) ?></span>
 					</a>	    				
 				</li>
 				
-				<li>					
+				<li class="<?php echo ( $this->getAction()->getController()->id == 'payforms' ? 'active' : '' ) ?>">					
 					<a href="<?php echo CHtml::normalizeUrl( array( '/admin/payforms/' ) ) ?>" class="dropdown-toggle">
 						<i class="icon-credit-card"></i>
 						<span><?php echo Yii::t( 'global', 'payform' ) ?></span>
 					</a>	  				
 				</li>
 				
-				<li>
+				<li class="<?php echo ( $this->getAction()->getController()->id == 'reports' ? 'active' : '' ) ?>">
 					<a href="<?php echo CHtml::normalizeUrl( array( '/admin/reports/' ) ) ?>">
 						<i class="icon-bar-chart"></i>
 						<span><?php echo Yii::t( 'global', 'reports' ) ?></span>
@@ -204,10 +205,10 @@
     				<h4><?php echo Yii::t( 'global', 'about' ) ?></h4>
     				
     				<ul>
-    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'about_us' ) ?></a></li>
-    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'twitter' ) ?></a></li>
-    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'facebook' ) ?></a></li>
-    					<li><a href="javascript:;"><?php echo Yii::t( 'global', 'google_plus' ) ?></a></li>
+                                        <li><i class='icon-group'></i>&nbsp;<a href="javascript:;"><?php echo Yii::t( 'global', 'about_us' ) ?></a></li>
+    					<li><i class='icon-twitter'></i>&nbsp;<a href="<?php echo Yii::app()->params->networks[ 'twitter' ] ?>"><?php echo Yii::t( 'global', 'twitter' ) ?></a></li>
+    					<li><i class='icon-facebook'></i>&nbsp;<a href="<?php echo Yii::app()->params->networks[ 'facebook' ] ?>"><?php echo Yii::t( 'global', 'facebook' ) ?></a></li>
+    					<li><i class='icon-google-plus'></i>&nbsp;<a href="javascript:;"><?php echo Yii::t( 'global', 'google_plus' ) ?></a></li>
     				</ul>
     				
     			</div> <!-- /span3 -->
