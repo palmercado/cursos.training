@@ -72,7 +72,7 @@
 							<li><a href="javascript:;"><?php echo Yii::t( 'global', 'my_profile' ) ?></a></li>
 							<li><a href="javascript:;"><?php echo Yii::t( 'global', 'my_groups' ) ?></a></li>
 							<li class="divider"></li>
-							<?php if( ! Yii::app()->user->isGuest ): ?><li><a href="javascript:;"><?php echo CHtml::link( Yii::t( 'global', 'logout' ), CHtml::normalizeUrl( array( '/admin/default/logout' ) ) ) ?></a></li><?php endif ?>
+							<?php if( ! Yii::app()->user->isGuest ): ?><li><?php echo CHtml::link( Yii::t( 'global', 'logout' ), CHtml::normalizeUrl( array( '/admin/default/logout' ) ) ) ?></li><?php endif ?>
 						</ul>
 						
 					</li>

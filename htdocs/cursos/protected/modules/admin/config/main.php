@@ -42,6 +42,7 @@ return array(
             'loginUrl'=>array( 'admin/default/login' ),
         ),
     ),
+    'homeUrl'       => array( '/admin/default' ),
 );
 
 
