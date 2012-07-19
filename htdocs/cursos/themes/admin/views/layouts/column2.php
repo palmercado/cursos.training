@@ -25,14 +25,9 @@ $this->beginContent('//layouts/main'); ?>
             </div>
             <div class='span4'>
                 <?php
-                        $this->beginWidget('zii.widgets.CPortlet', array(
-                                'title'=> Yii::t( 'categories', 'operations' ),
-                        ));
-                        $this->widget('zii.widgets.CMenu', array(
+                        $this->widget('CMenu', array(
                                 'items'=>$this->menu,
-                                'htmlOptions'=>array('class'=>'operations'),
                         ));
-                        $this->endWidget();
                 ?>
             </div>
 	</div><!-- content -->

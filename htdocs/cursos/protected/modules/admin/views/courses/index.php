@@ -4,8 +4,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=> Yii::t( 'courses', 'create' ), 'url'=>array('create') ),
-	array('label'=> Yii::t( 'courses', 'manage' ), 'url'=>array('admin') ),
+	array('label'=> Yii::t( 'courses', 'create' ), 'url'=>array('create'), 'class' => 'icon-plus' ),
+	array('label'=> Yii::t( 'courses', 'manage' ), 'url'=>array('admin'), 'class'  => 'icon-wrench' ),
 );
 ?>
 

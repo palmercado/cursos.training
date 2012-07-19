@@ -56,7 +56,8 @@ return array(
     'oops'             => '¡Oops!',
     'error_404'        => 'Lo sentimos, un error ocurrió, ¡La página solicitada no existe!',
     'description_error'=> 'Error %s',
-    'yes'			   => 'Si',
-    'no'			   => 'No',
+    'yes'              => 'Si',
+    'no'               => 'No',
+    'operations'       => 'Operaciones',
 );
 ?>
