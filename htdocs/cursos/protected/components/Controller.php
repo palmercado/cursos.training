@@ -25,7 +25,7 @@ class Controller extends CController
 	{
 	    parent::__construct( $id, $module );
 	    
-	    //Por defecto el lenguaje es Español
-    	Yii::app()->language = 'es_ES';
+	    //Por defecto el lenguaje es Espaï¿½ol
+    	    Yii::app()->language = 'es_ES';
 	}
 }

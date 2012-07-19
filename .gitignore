@@ -3,3 +3,5 @@ htdocs/cursos/assets/*
 htdocs/requirements/*
 htdocs/demos/*
 htdocs/cursos/protected/config/*
+/nbproject/private/
+*.DS_Store*
