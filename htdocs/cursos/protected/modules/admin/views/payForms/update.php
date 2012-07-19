@@ -6,10 +6,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List PayForms', 'url'=>array('index')),
-	array('label'=>'Create PayForms', 'url'=>array('create')),
-	array('label'=>'View PayForms', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage PayForms', 'url'=>array('admin')),
+	array('label'=> Yii::t('payforms','list'), 'url'=>array('index'), 'class' => 'icon-list'),
+	array('label'=> Yii::t('payforms','create'), 'url'=>array('create'), 'class' => 'icon-plus'),
+	array('label'=> Yii::t('payforms','view_individual'), 'url'=>array('view', 'id'=>$model->id), 'class' => 'icon-eye-open'),
+	array('label'=> Yii::t('payforms','manage'), 'url'=>array('admin'), 'class' => 'icon-wrench'),
 );
 ?>
 

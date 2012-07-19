@@ -21,14 +21,18 @@
 return array(
     'create'                                      => 'Crear',
     'manage'                                      => 'Administrar',
-    'view'									      => 'Forma de pago %s',
-    'id'										  => 'Clave',
+    'view'                                        => 'Forma de pago %s',
+    'id'					  => 'Clave',
     'name'                                        => 'Nombre',
     'description'                                 => 'Descripción',
     'helptext'                                    => 'Ayuda',
     'filename'                                    => 'Archivo',
-    'enabled'                                     => 'Aprobado',
-    'title'										  => 'Formas de pago',
-    'update'									  => 'Actualizar',
+    'enabled'                                     => 'Aprobar',
+    'title'					  => 'Formas de pago',
+    'update'					  => 'Actualizar',
+    'list'                                        => 'Listado',
+    'manage'                                      => 'Administrar',
+    'delete'                                      => 'Eliminar',
+    'view_individual'                             => 'Ver',
 );
 ?>

@@ -5,11 +5,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List PayForms', 'url'=>array('index')),
-	array('label'=> Yii::t( 'payforms', 'create' ), 'url'=>array('create')),
-	array('label'=>'Update PayForms', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete PayForms', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=> Yii::t( 'payforms', 'manage' ), 'url'=>array('admin')),
+	array('label'=> Yii::t('payforms','list'), 'url'=>array('index'), 'class' => 'icon-list'),
+	array('label'=> Yii::t( 'payforms', 'create' ), 'url'=>array('create'), 'class' => 'icon-plus'),
+	array('label'=> Yii::t('payforms','update'), 'url'=>array('update', 'id'=>$model->id), 'class' => 'icon-edit'),
+	array('label'=> Yii::t('payforms','delete'), 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?'), 'class' => 'icon-minus'),
+	array('label'=> Yii::t( 'payforms', 'manage' ), 'url'=>array('admin'), 'class' => 'icon-wrench'),
 );
 ?>
 
