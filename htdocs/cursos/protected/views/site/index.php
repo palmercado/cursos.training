@@ -72,3 +72,104 @@
 
 </div> <!-- /masthead -->
 
+
+<div id='categories'>
+    <div class='graybar'><i class='left'></i><h2>Seguridad informática</h2><i class='right'></i></div>
+    <div class='clear'></div>
+    <div class='row course-container'>
+        <div class='grid-3'>
+            <div class='course-item'>
+                <h3><a href="#">Hacking SQLi</a></h3>
+                <a class='thumbnail'>
+                    <img src='<?php echo Yii::app()->baseUrl . Yii::app()->params[ 'course_upload' ] ?>/2_small.jpg' />
+                </a>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Ver más', array( '/' ), array( 'class' => 'icon-plus' ) ) ?></div>
+                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Comprar', array( '/' ), array( 'class' => 'icon-credit-card' ) ) ?></div>
+            </div>
+        </div>
+        <div class='grid-3'>
+            <div class='course-item'>
+                <h3><a href="#">Hacking SQLi</a></h3>
+                <a class='thumbnail'>
+                    <img src='<?php echo Yii::app()->baseUrl . Yii::app()->params[ 'course_upload' ] ?>/2_small.jpg' />
+                </a>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Ver más', array( '/' ), array( 'class' => 'icon-plus' ) ) ?></div>
+                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Comprar', array( '/' ), array( 'class' => 'icon-credit-card' ) ) ?></div>
+            </div>
+        </div>
+        <div class='grid-3'>
+            <div class='course-item'>
+                <h3><a href="#">Hacking SQLi</a></h3>
+                <a class='thumbnail'>
+                    <img src='<?php echo Yii::app()->baseUrl . Yii::app()->params[ 'course_upload' ] ?>/2_small.jpg' />
+                </a>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Ver más', array( '/' ), array( 'class' => 'icon-plus' ) ) ?></div>
+                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Comprar', array( '/' ), array( 'class' => 'icon-credit-card' ) ) ?></div>
+            </div>
+        </div>
+        <div class='grid-3'>
+            <div class='course-item'>
+                <h3><a href="#">Hacking SQLi</a></h3>
+                <a class='thumbnail'>
+                    <img src='<?php echo Yii::app()->baseUrl . Yii::app()->params[ 'course_upload' ] ?>/2_small.jpg' />
+                </a>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Ver más', array( '/' ), array( 'class' => 'icon-plus' ) ) ?></div>
+                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Comprar', array( '/' ), array( 'class' => 'icon-credit-card' ) ) ?></div>
+            </div>
+        </div>
+    </div>
+    <!-- /Seguridad -->
+    <div class='graybar'><i class='left'></i><h2>Programación</h2><i class='right'></i></div>
+    <div class='clear'></div>
+    <div class='row course-container'>
+        <div class='grid-3'>
+            <div class='course-item'>
+                <h3><a href="#">Desarrollo en C</a></h3>
+                <a class='thumbnail'>
+                    <img src='<?php echo Yii::app()->baseUrl . Yii::app()->params[ 'course_upload' ] ?>/2_small.jpg' />
+                </a>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Ver más', array( '/' ), array( 'class' => 'icon-plus' ) ) ?></div>
+                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Comprar', array( '/' ), array( 'class' => 'icon-credit-card' ) ) ?></div>
+            </div>
+        </div>
+        <div class='grid-3'>
+            <div class='course-item'>
+                <h3><a href="#">Desarrollo en C</a></h3>
+                <a class='thumbnail'>
+                    <img src='<?php echo Yii::app()->baseUrl . Yii::app()->params[ 'course_upload' ] ?>/2_small.jpg' />
+                </a>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Ver más', array( '/' ), array( 'class' => 'icon-plus' ) ) ?></div>
+                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Comprar', array( '/' ), array( 'class' => 'icon-credit-card' ) ) ?></div>
+            </div>
+        </div>
+        <div class='grid-3'>
+            <div class='course-item'>
+                <h3><a href="#">Desarrollo en C</a></h3>
+                <a class='thumbnail'>
+                    <img src='<?php echo Yii::app()->baseUrl . Yii::app()->params[ 'course_upload' ] ?>/2_small.jpg' />
+                </a>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Ver más', array( '/' ), array( 'class' => 'icon-plus' ) ) ?></div>
+                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Comprar', array( '/' ), array( 'class' => 'icon-credit-card' ) ) ?></div>
+            </div>
+        </div>
+        <div class='grid-3'>
+            <div class='course-item'>
+                <h3><a href="#">Desarrollo en C</a></h3>
+                <a class='thumbnail'>
+                    <img src='<?php echo Yii::app()->baseUrl . Yii::app()->params[ 'course_upload' ] ?>/2_small.jpg' />
+                </a>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Ver más', array( '/' ), array( 'class' => 'icon-plus' ) ) ?></div>
+                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Comprar', array( '/' ), array( 'class' => 'icon-credit-card' ) ) ?></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /categories -->

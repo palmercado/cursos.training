@@ -17,7 +17,7 @@
     <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/base-admin-responsive.css" rel="stylesheet">
     
     <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/pages/dashboard.css" rel="stylesheet">   
-    <link href="<?php echo Yii::app()->baseUrl; ?>/css/global.css" rel="stylesheet">   
+    <link href="<?php echo Yii::app()->baseUrl; ?>/css/global.css" rel="stylesheet" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>

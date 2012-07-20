@@ -379,7 +379,7 @@ input {
 #masthead {
 	position: relative;
 	
-	height: 355px;
+	height: 250px;
 	margin-bottom: 2.5em;
 	
 	-moz-box-shadow: 1px 1px 6px rgba(0,0,0,.5);	
@@ -617,7 +617,7 @@ input {
 	margin: 0 0 0 20px;
 }
 
-.grid-1 { width: 55px; }
+.grid-1 { width: 70px; margin-left: 10px; display: inline-block; float:none; }
 .grid-2 { width: 130px; }
 .grid-3 { width: 193px; }
 .grid-4 { width: 264px; }
@@ -775,3 +775,15 @@ input {
 .no-resize{resize: none;}
 form.contact input:not([type="submit"]), form.contact textarea{width:255px;}
 form.contact input[type="submit"]{float:right;}
+
+#categories > div.graybar { height: 42px; margin-top: 10px;  }
+
+#categories > div.graybar > i, #categories > div.graybar h2 { background-position: 0px 0px no-repeat; float:left; height: 39px; }
+
+#categories > div.graybar > i.left { background-image: url(../images/bargray_left.png);  width: 10px; }
+#categories > div.graybar > h2 { padding: 10px 10px 0px 10px; background-image: url(../images/bargray_center.png); width: auto; min-width: 788px; height: 29px; color: #004466; font: bold 16px 'Myriad Pro' }
+#categories > div.graybar > i.right { background-image: url(../images/bargray_right.png); width: 13px; }
+
+#categories div.course-container { clear:both; margin-top: 15px; }
+
+#categories div.course-item { border: 1px dotted #CCC; padding: 10px; }
