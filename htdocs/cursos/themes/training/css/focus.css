@@ -756,3 +756,22 @@ input {
 .row:after { content: ""; display: table; }
 .clearfix:after,
 .row:after { clear: both; }
+
+#legal {clear:both; text-align: center; width: 100%;}
+
+#legal ul { width: 400px; margin:0 auto; }
+
+#legal ul > li {
+    float: left;
+    list-style-type: none;
+    margin-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #555;
+    
+}
+
+#legal ul > li:last-child {border-right: 0px;}
+
+.no-resize{resize: none;}
+form.contact input:not([type="submit"]), form.contact textarea{width:255px;}
+form.contact input[type="submit"]{float:right;}

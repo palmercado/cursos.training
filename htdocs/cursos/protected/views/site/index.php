@@ -1,16 +1,73 @@
-<?php $this->pageTitle=Yii::app()->name; ?>
+<div id="masthead">
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+        <div class="container">
 
-<p>Congratulations! You have successfully created your Yii application.</p>
+                <div id="masthead-carousel" class="carousel slide">
 
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <tt><?php echo __FILE__; ?></tt></li>
-	<li>Layout file: <tt><?php echo $this->getLayoutFile('main'); ?></tt></li>
-</ul>
+                        <div class="carousel-inner">
+                                <div class="active item">
+                                        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/masthead/masthead.jpg" alt="" />
 
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+                                        <div class="masthead-details">
+
+                                                <h2>Masthead title goes right here!</h2>
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+
+                                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+
+                                        </div> <!-- /masthead-details -->
+                                </div> <!-- /item -->
+
+                                <div class="item">
+                                        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/masthead/masthead-2.jpg" alt="" />
+
+                                        <div class="masthead-details">
+
+                                                <h2>Masthead title goes right here!</h2>
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+
+                                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+
+                                        </div> <!-- /masthead-details -->
+                                </div> <!-- /item -->
+
+                                <div class="item">
+                                        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/masthead/masthead-4.jpg" alt="" />
+
+                                        <div class="masthead-details">
+
+                                                <h2>Masthead title goes right here!</h2>
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+
+                                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+
+                                        </div> <!-- /masthead-details -->
+                                </div> <!-- /item -->
+
+                                <div class="item">
+                                        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/masthead/masthead-3.jpg" alt="" />
+
+                                        <div class="masthead-details">
+
+                                                <h2>Masthead title goes right here!</h2>
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+
+                                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+
+                                        </div> <!-- /masthead-details -->
+                                </div> <!-- /item -->
+
+                        </div> <!-- /carousel-inner -->
+
+                        <a class="carousel-control left" href="#masthead-carousel" data-slide="prev">&lsaquo;</a>
+                        <a class="carousel-control right" href="#masthead-carousel" data-slide="next">&rsaquo;</a>
+
+                </div> <!-- /masthead-carousel -->
+
+        </div> <!-- /container -->
+
+</div> <!-- /masthead -->

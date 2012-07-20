@@ -30,6 +30,10 @@ return array(
     'networks'              => 'Comunidad',
     'suscribe'              => 'Suscribete',
     'owner'                 => '<a href="http://www.codebit.org">Codebit.org</a>',
-    'copyright'             => '&copy; %d Codebit.org. All Rights Reserved.'
+    'copyright'             => '&copy; %d Codebit.org. All Rights Reserved.',
+    'title'                 => 'Codebit Training',
+    'licence'               => 'Licencia',
+    'tos'                   => 'Términos y Condiciones',
+    'pop'                   => 'Políticas de Privacidad'
 );
 ?>

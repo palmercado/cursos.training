@@ -31,7 +31,7 @@
 			
 			<h1 id="title">
 				<a href="<?php echo Yii::app()->request->baseUrl; ?>">
-					Focus Business
+					<?php echo CHtml::encode( $this->pageTitle ) ?>
 				</a>
 			</h1>
 			
@@ -43,24 +43,24 @@
 		<div class="container">
 		
 			<ul id="main-nav">
-				<li class="active">
-					<a href="./index.html"><?php echo Yii::t( 'global', 'homepage' ) ?></a>
+				<li class="<?php if( Yii::app()->controller->id == 'site' ): ?>active<?php endif ?>">
+                                    <a href="<?php echo CHtml::normalizeUrl( array( '/' ) ) ?>"><?php echo Yii::t( 'global', 'homepage' ) ?></a>
 				</li>
 				
-				<li>
-					<a href="./about.html"><?php echo Yii::t( 'global', 'courses' ) ?></a>
+				<li class="<?php if( Yii::app()->controller->id == 'courses' ): ?>active<?php endif ?>">
+					<a href="<?php echo CHtml::normalizeUrl( array( '/courses' ) ) ?>"><?php echo Yii::t( 'global', 'courses' ) ?></a>
 				</li>
 				
-				<li>
-					<a href="./services.html"><?php echo Yii::t( 'global', 'workshops' ) ?></a>
+				<li class="<?php if( Yii::app()->controller->id == 'workshops' ): ?>active<?php endif ?>">
+					<a href="<?php echo CHtml::normalizeUrl( array( '/workshops' ) ) ?>"><?php echo Yii::t( 'global', 'workshops' ) ?></a>
 				</li>
 				
-				<li>
-					<a href="./faq.html"><?php echo Yii::t( 'global', 'faq' ) ?></a>
+				<li class="<?php if( Yii::app()->controller->id == 'help' ): ?>active<?php endif ?>">
+					<a href="<?php echo CHtml::normalizeUrl( array( '/help' ) ) ?>"><?php echo Yii::t( 'global', 'faq' ) ?></a>
 				</li>
 				
-				<li>
-					<a href="./contact.html"><?php echo Yii::t( 'global', 'contact' ) ?></a>
+				<li class="<?php if( Yii::app()->controller->id == 'contact' ): ?>active<?php endif ?>">
+					<a href="<?php echo CHtml::normalizeUrl( array( '/contact' ) ) ?>"><?php echo Yii::t( 'global', 'contact' ) ?></a>
 				</li>
 				
 			</ul>
@@ -68,83 +68,6 @@
 		</div> <!-- /container -->
 		
 	</div> <!-- /nav -->
-	
-	
-	
-	
-	<div id="masthead">
-		
-		<div class="container">
-		
-			<div id="masthead-carousel" class="carousel slide">
-				
-				<div class="carousel-inner">
-					<div class="active item">
-						<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/masthead/masthead.jpg" alt="" />
-				
-						<div class="masthead-details">
-							
-							<h2>Masthead title goes right here!</h2>
-							
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-							
-							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-							
-						</div> <!-- /masthead-details -->
-					</div> <!-- /item -->
-					
-					<div class="item">
-						<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/masthead/masthead-2.jpg" alt="" />
-				
-						<div class="masthead-details">
-							
-							<h2>Masthead title goes right here!</h2>
-							
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-							
-							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-							
-						</div> <!-- /masthead-details -->
-					</div> <!-- /item -->
-					
-					<div class="item">
-						<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/masthead/masthead-4.jpg" alt="" />
-				
-						<div class="masthead-details">
-							
-							<h2>Masthead title goes right here!</h2>
-							
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-							
-							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-							
-						</div> <!-- /masthead-details -->
-					</div> <!-- /item -->
-					
-					<div class="item">
-						<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/masthead/masthead-3.jpg" alt="" />
-				
-						<div class="masthead-details">
-							
-							<h2>Masthead title goes right here!</h2>
-							
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-							
-							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-							
-						</div> <!-- /masthead-details -->
-					</div> <!-- /item -->
-					
-				</div> <!-- /carousel-inner -->
-				
-				<a class="carousel-control left" href="#masthead-carousel" data-slide="prev">&lsaquo;</a>
-				<a class="carousel-control right" href="#masthead-carousel" data-slide="next">&rsaquo;</a>
-				
-			</div> <!-- /masthead-carousel -->
-			
-		</div> <!-- /container -->
-	
-	</div> <!-- /masthead -->
 	
 	
 	
@@ -167,12 +90,25 @@
 			<div class="row">
 				
 				<div class="grid-4">
-					<h1 id="footer-logo">Focus Business</h1>
+						
+					<h3><span class="slash">//</span> <?php echo Yii::t( 'global', 'suscribe' ) ?></h3>
 					
-					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	
+					<p>Subscribe to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
 					
-				</div> <!-- /grid-4 -->
-				
+					
+					<form>
+						
+						<input type="text" name="subscribe_email" placeholder="Your Email">
+						
+						<br>
+						
+						<button class="btn btn-warning">Subscribe</button>
+					</form>
+					
+					
+				</div><!-- /grid-4 -->
+                                
 				<div class="grid-4">
 					
 					<h3><span class="slash">//</span> <?php echo Yii::t( 'global', 'networks' ) ?></h3>
@@ -201,26 +137,19 @@
 					</ul>
 					
 				</div> <!-- /grid-4 -->
-				
+                                
 				<div class="grid-4">
-						
-					<h3><span class="slash">//</span> <?php echo Yii::t( 'global', 'suscribe' ) ?></h3>
+					<h3>¿Necesitas algo más?,</h3>
 					
-	
-					<p>Subscribe to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
+					<p>Estamos para servirte, dejanos tus datos y en breve nos pondremos en contácto contigo.</p>
+                                        <form class="contact">
+                                            <input type="text" placeholder="Nombre" />
+                                            <input type="text" placeholder="Correo@dominio.com" />
+                                            <textarea placeholder="Duda o comentario" class="no-resize"></textarea>
+                                            <input type='submit' class="btn btn-warning" value="Enviar" />
+                                        </form>
 					
-					
-					<form>
-						
-						<input type="text" name="subscribe_email" placeholder="Your Email">
-						
-						<br>
-						
-						<button class="btn btn-warning">Subscribe</button>
-					</form>
-					
-					
-				</div><!-- /grid-4 -->
+				</div> <!-- /grid-4 -->
 				
 			</div> <!-- /row -->
 			
@@ -241,7 +170,14 @@
 				</div> <!-- /grid-6 -->
 				
 				<div id="totop" class="grid-6">
-					<?php echo sprintf( Yii::t( 'global', 'owner' ) ) ?></a>
+					<?php echo sprintf( Yii::t( 'global', 'owner' ) ) ?>
+				</div> <!-- /grid-6 -->
+				<div id="legal" class="grid-6">
+                                        <ul>
+                                            <li><?php echo CHtml::link( Yii::t( 'global', 'licence' ), array( '/licence' ) ) ?></li>
+                                            <li><?php echo CHtml::link( Yii::t( 'global', 'tos' ), array( '/tos' ) ) ?></li>
+                                            <li><?php echo CHtml::link( Yii::t( 'global', 'pop' ), array( '/pop' ) ) ?></li>
+                                        </ul>
 				</div> <!-- /grid-6 -->
 				
 			</div> <!-- /row -->
