@@ -111,7 +111,7 @@
                                 
 				<li class="<?php echo ( $this->getAction()->getController()->id == 'categories' ? 'active' : '' ) ?>">
                                         <a href="<?php echo CHtml::normalizeUrl( array( '/admin/categories/' ) ) ?>">
-						<i class="icon-book"></i>
+						<i class="icon-tags"></i>
 						<span><?php echo Yii::t( 'global', 'categories' ) ?></span>
 					</a>
 				</li>
