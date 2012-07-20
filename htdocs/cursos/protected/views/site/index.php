@@ -10,7 +10,7 @@
 
                                         <div class="masthead-details">
 
-                                                <h2>Masthead title goes right here!</h2>
+                                                <h2>Lorem ipsum dolor sit amet, consectetur!</h2>
 
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
 
@@ -24,7 +24,7 @@
 
                                         <div class="masthead-details">
 
-                                                <h2>Masthead title goes right here!</h2>
+                                                <h2>Lorem ipsum dolor sit amet, consectetur!</h2>
 
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
 
@@ -38,7 +38,7 @@
 
                                         <div class="masthead-details">
 
-                                                <h2>Masthead title goes right here!</h2>
+                                                <h2>Lorem ipsum dolor sit amet, consectetur!</h2>
 
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
 
@@ -52,7 +52,7 @@
 
                                         <div class="masthead-details">
 
-                                                <h2>Masthead title goes right here!</h2>
+                                                <h2>Lorem ipsum dolor sit amet, consectetur!</h2>
 
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
 
