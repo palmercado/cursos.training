@@ -112,13 +112,13 @@ input {
 #header h1 {
 	overflow: hidden;
 	
-	width: 252px;
-	height: 42px;
+	width: 440px;
+	height: 100px;
 	margin: 0;
 	
 	line-height: 600px;
 	
-	background: url(../images/title.png) no-repeat 0 0;
+	background: url(../images/logo.png) no-repeat 0 0;
 }
 
 #header h1 a {
