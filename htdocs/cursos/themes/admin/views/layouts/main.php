@@ -44,6 +44,7 @@
 			
 			<div class="nav-collapse">
 				<ul class="nav pull-right">
+                                        <?php if( ! Yii::app()->user->isGuest ): ?>
 					<li class="dropdown">
 						
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -59,14 +60,21 @@
 						</ul>
 						
 					</li>
+                                        <?php endif ?>
 			
 					<li class="dropdown">
-						
+                                                <?php if( ! Yii::app()->user->isGuest ): ?>
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<i class="icon-user"></i> 
+							<i class="icon-user"></i>
 							<?php echo Yii::app()->user->name ?>
 							<b class="caret"></b>
 						</a>
+                                                <?php else: ?>
+                                                <a href="<?php echo CHtml::normalizeUrl( array( 'default/login' ) ) ?>">
+							<i class="icon-unlock"></i>
+							<?php echo Yii::t( 'global', 'login' ) ?>
+						</a>
+                                                <?php endif ?>
 						
 						<ul class="dropdown-menu">
 							<li><a href="javascript:;"><?php echo Yii::t( 'global', 'my_profile' ) ?></a></li>
@@ -160,12 +168,6 @@
 				
 					<ul class="dropdown-menu">
                                                 <li><a href="<?php echo CHtml::normalizeUrl( array( '/admin/places/' ) ) ?>"><?php echo Yii::t( 'global', 'places' ) ?></a></li>
-						<li><a href="./charts.html">Charts</a></li>
-						<li><a href="./account.html">User Account</a></li>
-						<li class="divider"></li>
-						<li><a href="./login.html">Login</a></li>
-						<li><a href="./signup.html">Signup</a></li>
-						<li><a href="./error.html">Error</a></li>
 					</ul>    				
 				</li>
 			

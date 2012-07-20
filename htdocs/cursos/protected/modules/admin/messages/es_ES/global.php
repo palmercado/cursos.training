@@ -59,5 +59,6 @@ return array(
     'yes'              => 'Si',
     'no'               => 'No',
     'operations'       => 'Operaciones',
+    'login'            => 'Identificarse',
 );
 ?>
