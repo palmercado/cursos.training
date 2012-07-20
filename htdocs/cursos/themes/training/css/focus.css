@@ -42,7 +42,7 @@ body {
 	
 	font: 12px/1.7em 'Open Sans', arial, sans-serif;
 	
-	background: #DDD url(../images/bg.png) repeat 0 0;
+	background: #fff url(../images/bg.png) repeat 0 0;
 }
 
 p {	
@@ -83,11 +83,22 @@ input {
 [2. Wrapper]
 */
 
+#wrapper-content {
+    width: 915px;
+    margin: 0 auto;
+    margin-top: 0px;
+
+    background: url(../images/bg_gray.png);
+
+    position: relative;
+    padding: 0 51px 0px 32px;
+}
+
 #wrapper {
 	width: 832px;
 	padding: 0 50px;
 	margin: 0 auto;
-        margin-top: 15px;
+        margin-top: 0px;
 	
 	background: #FFF;
 	
