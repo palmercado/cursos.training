@@ -9,15 +9,12 @@ Codebit training, Términos y condiciones
 
 1.- Contenidos
 
-Los servicios contratados con Codebit deben ser utilizados exclusivamente 
-con fines licitos. Queda estrictamente prohibido el uso de cualquiera de
-los servicios contratados con Codebit o materiales publicados por codebit
+Los servicios contratados con Codebit deben ser utilizados exclusivamente con fines licitos. Queda estrictamente prohibido el uso de cualquiera de los servicios contratados con Codebit o materiales publicados por codebit
 para la violación cualquier Ley local, Nacional o Internacional.
 
-Codebit se deslinda de materiales o información que no haya sido extrictamente publicada en el sitio de Codebit.org
+Codebit se deslinda de materiales o información que no haya sido extrictamente publicada en el sitio de Codebit.org.
 
-En caso de cualquier uso del sistema para fines ilicitos, Codebit podrá suspender los servicios contratados sin previo aviso y sin comprometerse a
-realizar devolución alguna por el tiempo no utilizado de su servicio.
+En caso de cualquier uso del sistema para fines ilicitos, Codebit podrá suspender los servicios contratados sin previo aviso y sin comprometerse a realizar devolución alguna por el tiempo no utilizado de su servicio.
 
 2. Denegación o discuntinuidad del servicio
 Codebit se reserva el derecho a denegar o interrupir los servicios contratados por el cliente con o sin notificación previa si el cliente incurre en cualquier conducta o actividad que Codebit.org considere abuso o violación de alguno de los términos, normas y condiciones aquí expuestas, con o sin previo aviso y no responsabilizándose de las consecuencias que pudieran resultar por este motivo.
