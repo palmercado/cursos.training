@@ -1,4 +1,5 @@
 @import url("font-awesome.css");
+@import url("font-myriad_pro.css");
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
 
 
@@ -83,19 +84,20 @@ input {
 */
 
 #wrapper {
-	width: 880px;
+	width: 832px;
 	padding: 0 50px;
 	margin: 0 auto;
 	
 	background: #FFF;
 	
 	border: 1px solid #DDD\9;
-	border-top: 12px solid #222;
+	border-top: 12px solid #000;
 	border-bottom: none;
 	
 	-moz-box-shadow: 0 0 5px rgba(0,0,0,.25);
 	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.25);
 	box-shadow: 0 0 5px rgba(0,0,0,.25);
+        position: relative;
 }
 
 
@@ -169,30 +171,40 @@ input {
 	
 	padding: 15px 5px 5px;
 	
-	color: #999;
+	color: #FFF;
 	
-	text-transform: uppercase;
+	text-transform: capitalize;
 	
 	border-top: 1px solid transparent;
 }
 
 #nav .container > #main-nav > li > a:hover,
 #nav .container > #main-nav > li.dropdown.open > a {
-	color: #333;
+	color: #fff;
 	
 	text-decoration: none;
 	
-	border-top-color: #333;
-	border-top-width: 1px;
+        text-shadow: 1px 1px 2px #f80;
+            -moz-text-shadow: 1px 1px 2px #f80;
+                -webkit-text-shadow: 1px 1px 2px #f80;
+}
+
+#nav .container > #main-nav > li > a, #nav .container > #main-nav > li.active a {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Myriad Pro';
 }
 
 #nav .container > #main-nav > li.active a {
 	padding-top: 12px;
 	
-	color: #222;
+	color: #FFF;
 	
-	border-top-color: #F90;
-	border-top-width: 4px;
+	border-bottom: 1px dotted #fff;
+        
+        text-shadow: 1px 1px 2px #fcc;
+            -moz-text-shadow: 1px 1px 2px #f8A;
+                -webkit-text-shadow: 1px 1px 2px #f8A;
 }
 
 #nav .container > #main-nav > li > a > .caret {
@@ -200,6 +212,15 @@ input {
 	top: -2px;
 	
 	margin-left: .5em;
+}
+
+#nav .container > #main-nav {
+    background: url(../images/menubar.png);
+    height: 66px;
+    position: relative;
+    left: -84px;
+    width: 830px;
+    padding: 0px 85px;
 }
 
 #nav .dropdown-menu a:hover {
@@ -358,7 +379,7 @@ input {
 #masthead {
 	position: relative;
 	
-	height: 375px;
+	height: 355px;
 	margin-bottom: 2.5em;
 	
 	-moz-box-shadow: 1px 1px 6px rgba(0,0,0,.5);	
@@ -474,9 +495,32 @@ input {
 */
 
 #content {
-	
+	margin-bottom: 50px;
 }
 
+/*------------------------------------------------------------------
+[ Content/Footer]
+*/
+.content-footer {
+    background: url(../images/divider-footer.png) no-repeat center center;
+    height:30px;
+    position: absolute;
+    left: -9px;
+    width: 950px;
+    margin-top: -7px;
+}
+
+.content-footer > div.logo {
+    background: url(../images/logo_footer.png) no-repeat center center;
+    position: relative;
+    height: 99px;
+    top: -35px;
+}
+
+.content-footer > div.logo div.image {
+    background: url(../images/footer_logo_image.png) no-repeat center center;
+    height: 99px;
+}
 
 
 /*------------------------------------------------------------------
@@ -485,18 +529,22 @@ input {
 #footer {
 	clear: both;
 	
-	padding: 20px 50px;
+	padding: 50px 50px 20px 50px;
 	margin: 2.5em -50px 0;
 	
-	color: #BBB;
+	color: #555;
 	
-	background: #222;
+	background: url(../images/bg_footer.png);
 	
-	border-top: 1px solid #111;
+	border-top: 1px solid #BABCC0;
 	
 	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
 	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
 	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+}
+
+#footer h3 {
+    color: #226688;
 }
 
 #footer .row {
@@ -571,8 +619,8 @@ input {
 
 .grid-1 { width: 55px; }
 .grid-2 { width: 130px; }
-.grid-3 { width: 205px; }
-.grid-4 { width: 280px; }
+.grid-3 { width: 193px; }
+.grid-4 { width: 264px; }
 .grid-5 { width: 355px; }
 .grid-6 { width: 430px; }
 .grid-7 { width: 505px; }
@@ -644,7 +692,7 @@ input {
 .slash {
 	padding-right: .25em;
 	
-	color: #F90;
+	color: #990;
 }
 
 

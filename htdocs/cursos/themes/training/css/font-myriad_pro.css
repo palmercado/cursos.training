@@ -1,0 +1,16 @@
+/* 
+    Document   : myriad_pro
+    Created on : 20-jul-2012, 2:02:40
+    Author     : juliobarreraa@gmail.com
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+@font-face {
+    font-family: "Myriad Pro";
+    src: url(../MyriadPro-Bold.otf) format("opentype");
+}
