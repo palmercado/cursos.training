@@ -47,7 +47,7 @@ class Members extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('rol_id, name, lastname, email, updated_at, created_at', 'required'),
+			array('rol_id, name, lastname, email, created_at', 'required'),
 			array('enabled', 'numerical', 'integerOnly'=>true),
 			array('rol_id', 'length', 'max'=>11),
 			array('name', 'length', 'max'=>40),
@@ -80,16 +80,16 @@ class Members extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'rol_id' => 'Rol',
-			'name' => 'Name',
-			'lastname' => 'Lastname',
-			'email' => 'Email',
-			'phone' => 'Phone',
-			'extraInfo' => 'Extra Info',
-			'enabled' => 'Enabled',
-			'updated_at' => 'Updated At',
-			'created_at' => 'Created At',
+			'id' => Yii::t( 'members', 'id' ),
+			'rol_id' => Yii::t( 'members', 'select_rol' ),
+			'name' => Yii::t( 'members', 'name' ),
+			'lastname' => Yii::t( 'members', 'lastname' ),
+			'email' => Yii::t( 'members', 'email' ),
+			'phone' => Yii::t( 'members', 'phone' ),
+			'extraInfo' => Yii::t( 'members', '' ),
+			'enabled' => Yii::t( 'members', 'enabled' ),
+			'updated_at' => '',
+			'created_at' => '',
 		);
 	}
 
@@ -119,4 +119,43 @@ class Members extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
+    public function isDisplayErrors()
+    {
+        if( $this->hasErrors() )
+        {
+            return 'block';
+        }
+        else
+        {
+            return 'none';
+        }
+    }
+    
+    
+    public function isError( $field )
+    {
+        if( $this->hasErrors( $field ) )
+        {
+            return 'error';
+        }
+        else
+        {
+            return 'warning';
+        }
+    }
+    
+        
+    public function onBeforeValidate($event) {
+        //Se crea la fecha con el timestamp actual, si es un nuevo registro, en caso contrario se actualiza el valor de $this->update_at
+        if( ! $this->getIsNewRecord() )
+        {
+            $this->updated_at = time();
+        }
+        else
+        {
+            $this->created_at = time();
+        }
+        return parent::onBeforeValidate($event);
+    }
 }

@@ -131,15 +131,15 @@
 					</a>	    				
 				</li>
                                 
-				<li class="<?php echo ( $this->getAction()->getController()->id == 'members' ? 'active' : '' ) ?>">
-					<a href="<?php echo CHtml::normalizeUrl( array( '/admin/members/' ) ) ?>">
+				<li class="<?php echo ( $this->getAction()->getController()->id == 'students' ? 'active' : '' ) ?>">
+					<a href="<?php echo CHtml::normalizeUrl( array( '/admin/students/' ) ) ?>">
 						<i class="icon-group"></i>
 						<span><?php echo Yii::t( 'global', 'students' ) ?></span>
 					</a>	    				
 				</li>
                                 
-				<li class="<?php echo ( $this->getAction()->getController()->id == 'members' ? 'active' : '' ) ?>">
-					<a href="<?php echo CHtml::normalizeUrl( array( '/admin/members/' ) ) ?>">
+				<li class="<?php echo ( $this->getAction()->getController()->id == 'instructors' ? 'active' : '' ) ?>">
+					<a href="<?php echo CHtml::normalizeUrl( array( '/admin/instructors/' ) ) ?>">
 						<i class="icon-certificate"></i>
 						<span><?php echo Yii::t( 'global', 'instructors' ) ?></span>
 					</a>	    				
