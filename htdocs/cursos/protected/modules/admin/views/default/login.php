@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Login - Base Admin</title>
+    <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes"> 
     
-<link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
 
-<link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/font-awesome.css" rel="stylesheet">
+    <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/font-awesome.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
     
 <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/base-admin.css" rel="stylesheet" type="text/css">
@@ -36,13 +36,6 @@
 			
 			<div class="nav-collapse">
 				<ul class="nav pull-right">
-					
-					<li class="">						
-						<a href="./signup.html" class="">
-							Create an Account
-						</a>
-						
-					</li>
 					
 					<li class="">
 						<a href="<?php echo CHtml::normalizeUrl( array( '/admin/' ) ) ?>" class="">
@@ -75,11 +68,11 @@
                     ),
                  )); ?>
 		
-			<h1>Sign In</h1>		
+			<h1><?php echo Yii::t( 'login', 'signin' ) ?></h1>		
 			
 			<div class="login-fields">
 				
-				<p>Sign in using your registered account:</p>
+				<p><?php echo Yii::t( 'login', 'signin_description' ) ?>:</p>
 				
 				<div class="field">
 					<?php echo $form->labelEx($model,'username'); ?>
@@ -100,19 +93,19 @@
                                         <?php echo $form->label($model,'rememberMe', array( 'class' => 'choice' ) ); ?>
 				</span>
 						
-                                <?php echo CHtml::submitButton('Login', array( 'class' => 'button btn btn-warning btn-large' )); ?>
+                                <?php echo CHtml::submitButton( Yii::t( 'login', 'login' ), array( 'class' => 'button btn btn-warning btn-large' )); ?>
 				
 			</div> <!-- .actions -->
 			
 			<div class="login-social">
-				<p>Sign in using social network:</p>
+				<p><?php echo Yii::t( 'login', 'login_with' ) ?>:</p>
 				
 				<div class="twitter">
-					<a href="#" class="btn_1">Login with Twitter</a>				
+					<a href="#" class="btn_1"><?php echo Yii::t( 'global', 'twitter' ) ?></a>				
 				</div>
 				
 				<div class="fb">
-					<a href="#" class="btn_2">Login with Facebook</a>				
+					<a href="#" class="btn_2"><?php echo Yii::t( 'global', 'facebook' ) ?></a>				
 				</div>
 			</div>
 			
@@ -125,8 +118,7 @@
 
 <!-- Text Under Box -->
 <div class="login-extra">
-	Don't have an account? <a href="./signup.html">Sign Up</a><br/>
-	Remind <a href="#">Password</a>
+	<?php echo sprintf( Yii::t( 'login', 'forget_password' ), '#' ) ?>
 </div> <!-- /login-extra -->
 
 
