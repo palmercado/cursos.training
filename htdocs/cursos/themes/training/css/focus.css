@@ -774,7 +774,7 @@ input {
 
 .no-resize{resize: none;}
 form.contact input:not([type="submit"]), form.contact textarea{width:255px;}
-form.contact input[type="submit"]{float:right;}
+form.contact input[type="submit"], form.suscribe input[type="submit"]{float:right; width: auto;}
 
 #categories > div.graybar { height: 42px; margin-top: 10px;  }
 

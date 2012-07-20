@@ -97,13 +97,11 @@
 					<p>Subscribe to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
 					
 					
-					<form>
+					<form class="suscribe">
 						
-						<input type="text" name="subscribe_email" placeholder="Your Email">
+						<input type="text" name="subscribe_email" placeholder="correo@dominio">
 						
-						<br>
-						
-						<button class="btn btn-warning">Subscribe</button>
+						<input type="submit" class="btn btn-warning" value="Suscribete" />
 					</form>
 					
 					
