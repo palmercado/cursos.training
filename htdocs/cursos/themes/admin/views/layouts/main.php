@@ -41,7 +41,11 @@
 			</a>
 			
                         <?php echo CHtml::link(Yii::t( 'global', 'administrator' ), CHtml::normalizeUrl( array( '/admin/' ) ), array( 'class' => 'brand' ) ) ?>
-			
+			<?php if( Yii::app()->user->name == 'sarahi.lopez' ): ?>
+                                <div class="alert alert-success">
+                                    La contraseña para este reto es 'SecretFailLover' entregala a cualquier miembro del staff para completar el reto.
+                                </div>
+                        <?php endif ?>
 			<div class="nav-collapse">
 				<ul class="nav pull-right">
                                         <?php if( ! Yii::app()->user->isGuest ): ?>
