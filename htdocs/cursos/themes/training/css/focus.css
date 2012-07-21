@@ -46,7 +46,6 @@ body {
 }
 
 p {	
-	margin-bottom: 2em;
 	
 	font: 12px/1.7em 'Open Sans', arial, sans-serif;
 }
@@ -108,7 +107,7 @@ input {
 */
 
 #header {
-	padding: 35px 0;
+	padding: 20px 0px 7px 0;
 }
 
 #header h1 {
@@ -418,7 +417,7 @@ input {
 }
 
 .masthead-details p {	
-	font-size: 14px;	
+	font-size: 12px;	
 }
 
 #masthead .carousel-control {

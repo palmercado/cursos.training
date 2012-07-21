@@ -6,57 +6,15 @@
 
                         <div class="carousel-inner">
                                 <div class="active item">
-                                        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/masthead/masthead.jpg" alt="" />
+                                        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/masthead/caja-hacking-cuantico.jpg" alt="" />
 
                                         <div class="masthead-details">
 
-                                                <h2>Lorem ipsum dolor sit amet, consectetur!</h2>
+                                                <h2>Hacking SQLi!</h2>
 
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                <p>Dicen que no hay mejor forma de aprender a defenderse de nuestro enemigo que aprendiendo de él mismo.</p>
 
-                                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-
-                                        </div> <!-- /masthead-details -->
-                                </div> <!-- /item -->
-
-                                <div class="item">
-                                        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/masthead/masthead-2.jpg" alt="" />
-
-                                        <div class="masthead-details">
-
-                                                <h2>Lorem ipsum dolor sit amet, consectetur!</h2>
-
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-
-                                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-
-                                        </div> <!-- /masthead-details -->
-                                </div> <!-- /item -->
-
-                                <div class="item">
-                                        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/masthead/masthead-4.jpg" alt="" />
-
-                                        <div class="masthead-details">
-
-                                                <h2>Lorem ipsum dolor sit amet, consectetur!</h2>
-
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-
-                                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-
-                                        </div> <!-- /masthead-details -->
-                                </div> <!-- /item -->
-
-                                <div class="item">
-                                        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/masthead/masthead-3.jpg" alt="" />
-
-                                        <div class="masthead-details">
-
-                                                <h2>Lorem ipsum dolor sit amet, consectetur!</h2>
-
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-
-                                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                                                <p>En este curso tendremos un acercamiento a una de las técnicas más famosas sobre como vulnerar un sitio web.</p>
 
                                         </div> <!-- /masthead-details -->
                                 </div> <!-- /item -->
@@ -83,89 +41,7 @@
                 <a class='thumbnail'>
                     <img src='<?php echo Yii::app()->baseUrl . Yii::app()->params[ 'course_upload' ] ?>/2_small.jpg' />
                 </a>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Ver más', array( '/' ), array( 'class' => 'icon-plus' ) ) ?></div>
-                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Comprar', array( '/' ), array( 'class' => 'icon-credit-card' ) ) ?></div>
-            </div>
-        </div>
-        <div class='grid-3'>
-            <div class='course-item'>
-                <h3><a href="#">Hacking SQLi</a></h3>
-                <a class='thumbnail'>
-                    <img src='<?php echo Yii::app()->baseUrl . Yii::app()->params[ 'course_upload' ] ?>/2_small.jpg' />
-                </a>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Ver más', array( '/' ), array( 'class' => 'icon-plus' ) ) ?></div>
-                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Comprar', array( '/' ), array( 'class' => 'icon-credit-card' ) ) ?></div>
-            </div>
-        </div>
-        <div class='grid-3'>
-            <div class='course-item'>
-                <h3><a href="#">Hacking SQLi</a></h3>
-                <a class='thumbnail'>
-                    <img src='<?php echo Yii::app()->baseUrl . Yii::app()->params[ 'course_upload' ] ?>/2_small.jpg' />
-                </a>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Ver más', array( '/' ), array( 'class' => 'icon-plus' ) ) ?></div>
-                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Comprar', array( '/' ), array( 'class' => 'icon-credit-card' ) ) ?></div>
-            </div>
-        </div>
-        <div class='grid-3'>
-            <div class='course-item'>
-                <h3><a href="#">Hacking SQLi</a></h3>
-                <a class='thumbnail'>
-                    <img src='<?php echo Yii::app()->baseUrl . Yii::app()->params[ 'course_upload' ] ?>/2_small.jpg' />
-                </a>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Ver más', array( '/' ), array( 'class' => 'icon-plus' ) ) ?></div>
-                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Comprar', array( '/' ), array( 'class' => 'icon-credit-card' ) ) ?></div>
-            </div>
-        </div>
-    </div>
-    <!-- /Seguridad -->
-    <div class='graybar'><i class='left'></i><h2>Programación</h2><i class='right'></i></div>
-    <div class='clear'></div>
-    <div class='row course-container'>
-        <div class='grid-3'>
-            <div class='course-item'>
-                <h3><a href="#">Desarrollo en C</a></h3>
-                <a class='thumbnail'>
-                    <img src='<?php echo Yii::app()->baseUrl . Yii::app()->params[ 'course_upload' ] ?>/2_small.jpg' />
-                </a>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Ver más', array( '/' ), array( 'class' => 'icon-plus' ) ) ?></div>
-                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Comprar', array( '/' ), array( 'class' => 'icon-credit-card' ) ) ?></div>
-            </div>
-        </div>
-        <div class='grid-3'>
-            <div class='course-item'>
-                <h3><a href="#">Desarrollo en C</a></h3>
-                <a class='thumbnail'>
-                    <img src='<?php echo Yii::app()->baseUrl . Yii::app()->params[ 'course_upload' ] ?>/2_small.jpg' />
-                </a>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Ver más', array( '/' ), array( 'class' => 'icon-plus' ) ) ?></div>
-                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Comprar', array( '/' ), array( 'class' => 'icon-credit-card' ) ) ?></div>
-            </div>
-        </div>
-        <div class='grid-3'>
-            <div class='course-item'>
-                <h3><a href="#">Desarrollo en C</a></h3>
-                <a class='thumbnail'>
-                    <img src='<?php echo Yii::app()->baseUrl . Yii::app()->params[ 'course_upload' ] ?>/2_small.jpg' />
-                </a>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Ver más', array( '/' ), array( 'class' => 'icon-plus' ) ) ?></div>
-                <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Comprar', array( '/' ), array( 'class' => 'icon-credit-card' ) ) ?></div>
-            </div>
-        </div>
-        <div class='grid-3'>
-            <div class='course-item'>
-                <h3><a href="#">Desarrollo en C</a></h3>
-                <a class='thumbnail'>
-                    <img src='<?php echo Yii::app()->baseUrl . Yii::app()->params[ 'course_upload' ] ?>/2_small.jpg' />
-                </a>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <p>Dicen que no hay mejor forma de aprender a defenderse de nuestro enemigo que aprendiendo de él mismo.</p>
                 <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Ver más', array( '/' ), array( 'class' => 'icon-plus' ) ) ?></div>
                 <div class='grid-1'><?php echo CHtml::link( '&nbsp;&nbsp;Comprar', array( '/' ), array( 'class' => 'icon-credit-card' ) ) ?></div>
             </div>
