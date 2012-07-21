@@ -86,7 +86,7 @@
 	
 	
         <div class="content-footer">
-            <div class="logo"><div class="image"></div></div>
+            <div class="logo"><div class="image"><a href="<?php echo CHtml::normalizeUrl( array( '/site/index' ) ) ?>"></a></div></div>
         </div>
 	<div id="footer">
 		

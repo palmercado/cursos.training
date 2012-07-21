@@ -525,9 +525,17 @@ input {
 
 .content-footer > div.logo div.image {
     background: url(../images/footer_logo_image.png) no-repeat center center;
+    text-align:center;
     height: 99px;
 }
 
+.content-footer > div.logo div.image > a {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
 
 /*------------------------------------------------------------------
 [10. Footer]
