@@ -11,23 +11,6 @@ $this->breadcrumbs=array(
 <div style='text-align: center;'><img src="<?php echo Yii::app()->baseUrl . Yii::app()->params->course_upload ?>/hacker-irlandes-en-libertad-300x300.jpg" /></div>
 <br />
 <pre>
-                        'usuario1' => '7gbwni1ebyd',
-                        'usuario2' => '81yhebdnk2r',
-                        'usuario3' => '81y73bnei2k',
-                        'usuario4' => '1iuegbi2kq2',
-                        'usuario5' => 'asnhuq183ts',
-                        'usuario6' => 'uh23hgenwid',
-                        'usuario7' => '8eghdi273yr',
-                        'usuario8' => '1u3g2neir3u',
-                        'usuario9' => '81gedi2bru2',
-                        'usuario10' => '1873gebni2r',
-                        'usuario11' => '18h12nine2u',
-                        'usuario12' => '18h3be2u37y',
-                        'usuario13' => '183gebru3yd',
-                        'usuario14' => 'jbxcsjyvw13',
-                        'usuario15' => '17egeb28ufs',
-                        'usuario16' => '173g2enried',
-
 Hacking, ¿Legal o ilegal?
 
 En un mundo donde los cyber terroristas diariamente se adueñan más de la red necesitamos prepararnos para enfrentar los obstáculos que ello implica. Ese es el fin de este curso, el cual te llevará de la mano para explorar territorios muy poco conocidos.
@@ -61,6 +44,9 @@ Y sobre todo, aprenderás que el conocimiento es la clave del éxito de todo bue
 - Creando una Shell.
 </pre>
 <h3>Descargas</h3>
+<a href="<?php echo Yii::app()->baseUrl ?>/downloads/Hacking SQLi.pptx"></a>
+<br />
+<a href="<?php echo Yii::app()->baseUrl ?>/downloads/Hacking SQLi.ppt"></a>
 <h3>Prácticas</h3>
 <br />
 <div class="alert alert-block">Para realizar este ejercicio primeramente deberás identificarte en: <a href="<?php echo CHtml::normalizeUrl( array( '/site/login/' ) ) ?>"><?php echo CHtml::normalizeUrl( array( '/site/login/' ) ) ?>.</a> con el nombre de usuario y contraseña que te proporciono algún miembro del staff. </div>
