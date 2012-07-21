@@ -94,65 +94,46 @@
 		
 			<div class="row">
 				
-				<div class="grid-4">
-						
-					<h3><span class="slash">//</span> <?php echo Yii::t( 'global', 'suscribe' ) ?></h3>
+				<div class="grid-6">
+                                        <h3 style="margin-bottom: 0.1em"><b class="show-comment-suggest"></b>¿Necesitas algo más?, contáctanos</h3>
 					
-	
-					<p>Subscribe to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
+                                        <div style='padding-left:60px;'>
+                                            <p>Estamos para servirte, dejanos tus datos y en breve nos pondremos en contácto contigo.</p>
+                                            <form class="contact">
+                                                <input type="text" placeholder="Nombre" />
+                                                <input type="text" placeholder="Correo@dominio.com" />
+                                                <textarea placeholder="Duda o comentario" class="no-resize"></textarea><br />
+                                                <input type='submit' class="btn btn-warning" style="margin-right: 59px;" value="Enviar" />
+                                            </form>
+                                        </div>
 					
-					
-					<form class="suscribe">
-						
-						<input type="text" name="subscribe_email" placeholder="correo@dominio">
-						
-						<input type="submit" class="btn btn-warning" value="Suscribete" />
-					</form>
-					
-					
-				</div><!-- /grid-4 -->
+				</div> <!-- /grid-6 -->
                                 
-				<div class="grid-4">
-					
-					<h3><span class="slash">//</span> <?php echo Yii::t( 'global', 'networks' ) ?></h3>
-					
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt magna aliqua.</p>
-					
-					<ul class="social-icons-container">						
-						<li>
-                                                        <a href="<?php echo CHtml::normalizeUrl( Yii::app()->params->networks[ 'twitter' ] ) ?>" class="social-icon social-icon-twitter">
-								<?php echo Yii::t( 'global', 'twitter' ) ?>
-							</a>
-						</li>
-							
-						<li>
-							<a href="<?php echo CHtml::normalizeUrl( Yii::app()->params->networks[ 'facebook' ] ) ?>" class="social-icon social-icon-googleplus">
-								<?php echo Yii::t( 'global', 'google_plus' ) ?>
-							</a>
-						</li>
+				<div class="grid-4" style="float:right;">
 						
-						<li>							
-							<a href="<?php echo CHtml::normalizeUrl( Yii::app()->params->networks[ 'facebook' ] ) ?>" class="social-icon social-icon-facebook">
-								<?php echo Yii::t( 'global', 'facebook' ) ?>
-							</a>
-						</li>
-						
-					</ul>
+					<h3><span class="follow"></span> Siguenos en:</h3>
 					
-				</div> <!-- /grid-4 -->
-                                
-				<div class="grid-4">
-					<h3>¿Necesitas algo más?,</h3>
+                                        <div style='padding-left:50px;'>
+                                            <div class="grid-0"><a href="" class='icons-tumblr'></a></div>
+                                            <div class="grid-0"><a href="<?php echo CHtml::normalizeUrl( Yii::app()->params->networks[ 'facebook' ] ) ?>" alt="<?php echo Yii::t( 'global', 'facebook' ) ?>" class='icons-facebook'></a></div>
+                                            <div class="grid-0"><a href="<?php echo CHtml::normalizeUrl( Yii::app()->params->networks[ 'twitter' ] ) ?>" alt="<?php echo Yii::t( 'global', 'twitter' ) ?>" class='icons-twitter'></a></div>
+                                        </div>
+                                        <br class="clear" />
+                                        <div class="divider-news"></div>
+					<h3><span class="suscribe-icon"></span> <?php echo Yii::t( 'global', 'suscribe' ) ?></h3>
 					
-					<p>Estamos para servirte, dejanos tus datos y en breve nos pondremos en contácto contigo.</p>
-                                        <form class="contact">
-                                            <input type="text" placeholder="Nombre" />
-                                            <input type="text" placeholder="Correo@dominio.com" />
-                                            <textarea placeholder="Duda o comentario" class="no-resize"></textarea>
-                                            <input type='submit' class="btn btn-warning" value="Enviar" />
-                                        </form>
+					<div style='padding-left:50px;'>
+                                            <form class="suscribe">
+
+                                                    <input type="text" name="subscribe_email" placeholder="correo@dominio" style="width:205px;">
+                                                    <br />
+                                                    <input type="submit" class="btn btn-warning" value="Suscribete" />
+                                            </form>
+                                        </div>
 					
-				</div> <!-- /grid-4 -->
+					
+				</div><!-- /grid-6 -->
+
 				
 			</div> <!-- /row -->
 			

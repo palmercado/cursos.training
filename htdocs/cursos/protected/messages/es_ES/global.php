@@ -28,7 +28,7 @@ return array(
     'facebook'              => 'Facebook',
     'google_plus'           => 'Google Plus',
     'networks'              => 'Comunidad',
-    'suscribe'              => 'Suscribete',
+    'suscribe'              => 'Suscribete a nuestro Newsletter',
     'owner'                 => '<a href="http://www.codebit.org">Codebit.org</a>',
     'copyright'             => '&copy; %d Codebit.org. All Rights Reserved.',
     'title'                 => 'Codebit Training',
