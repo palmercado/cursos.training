@@ -10,7 +10,7 @@
 	<link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/focus.css" rel="stylesheet" />
 	<link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/focus-responsive.css" rel="stylesheet" />
 	<link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/pages/homepage.css" rel="stylesheet" />
-	
+	<link href="<?php echo Yii::app()->baseUrl; ?>/css/global.css" rel="stylesheet" />
 
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -102,13 +102,11 @@
 					<p>Subscribe to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
 					
 					
-					<form>
+					<form class="suscribe">
 						
-						<input type="text" name="subscribe_email" placeholder="Your Email">
+						<input type="text" name="subscribe_email" placeholder="correo@dominio">
 						
-						<br>
-						
-						<button class="btn btn-warning">Subscribe</button>
+						<input type="submit" class="btn btn-warning" value="Suscribete" />
 					</form>
 					
 					
