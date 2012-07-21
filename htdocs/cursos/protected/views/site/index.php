@@ -6,7 +6,7 @@
 
                         <div class="carousel-inner">
                                 <div class="active item">
-                                        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/masthead/caja-hacking-cuantico.jpg" alt="" />
+                                        <a href="<?php echo CHtml::normalizeUrl( array( '/courses/view/1' ) ) ?>"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/masthead/caja-hacking-cuantico.jpg" alt="" /></a>
 
                                         <div class="masthead-details">
 
