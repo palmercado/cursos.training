@@ -783,9 +783,9 @@ form.contact input:not([type="submit"]), form.contact textarea{width:255px;}
 
 form.contact input[type="submit"]{float:right;}
 
-#header h1#suggest-course { background: url(../images/put_course.png); position: absolute; top: -2px; right: 10px; width: 164px; height: 110px; }
-#header h1#suggest-course > i { background: url(../images/focus_green.png); display: block; height: 70px; width:40px; top: 15px; left: 15px;z-index: 1; position:absolute; }
-#header h1#suggest-course > a {color: #046; font:bold 18px 'Myriad Pro'; padding: 33px 5px 0px 65px; word-break: break-all; }
+#header h1#suggest-course { background: url(../images/put_course.png) no-repeat; position: absolute; top: -2px; right: 45px; width: 120px; height: 80px; }
+#header h1#suggest-course > i { background: url(../images/focus_green.png) no-repeat; display: block; height: 40px; width:23px; top: 15px; left: 15px;z-index: 1; position:absolute; }
+#header h1#suggest-course > a {color: #046; font:bold 14px 'Myriad Pro'; padding: 22px 5px 0 50px; word-break: break-all; }
 
 form.contact input[type="submit"], form.suscribe input[type="submit"]{float:right; width: auto;}
 
