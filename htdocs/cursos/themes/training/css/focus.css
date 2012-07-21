@@ -125,6 +125,8 @@ input {
 
 #header h1 a {
 	display: block;
+        position: relative;
+        z-index: 5;
 }
 
 
@@ -380,7 +382,7 @@ input {
 	position: relative;
 	
 	height: 355px;
-	margin-bottom: 2.5em;
+	margin-bottom: 1.5em;
 	
 	-moz-box-shadow: 1px 1px 6px rgba(0,0,0,.5);	
 	-webkit-box-shadow: 1px 1px 6px rgba(0,0,0,.5);
@@ -775,3 +777,7 @@ input {
 .no-resize{resize: none;}
 form.contact input:not([type="submit"]), form.contact textarea{width:255px;}
 form.contact input[type="submit"]{float:right;}
+
+#header h1#suggest-course { background: url(../images/put_course.png); position: absolute; top: -2px; right: 10px; width: 164px; height: 110px; }
+#header h1#suggest-course > i { background: url(../images/focus_green.png); display: block; height: 70px; width:40px; top: 15px; left: 15px;z-index: 1; position:absolute; }
+#header h1#suggest-course > a {color: #046; font:bold 18px 'Myriad Pro'; padding: 33px 5px 0px 65px; word-break: break-all; }

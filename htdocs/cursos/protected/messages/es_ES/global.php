@@ -34,6 +34,7 @@ return array(
     'title'                 => 'Codebit Training',
     'licence'               => 'Licencia',
     'tos'                   => 'Términos y Condiciones',
-    'pop'                   => 'Políticas de Privacidad'
+    'pop'                   => 'Políticas de Privacidad',
+    'put_course'            => 'Proponer un curso',
 );
 ?>

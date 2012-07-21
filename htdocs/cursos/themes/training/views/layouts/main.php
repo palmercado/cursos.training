@@ -34,6 +34,11 @@
 					<?php echo CHtml::encode( $this->pageTitle ) ?>
 				</a>
 			</h1>
+                    
+                        <h1 id="suggest-course">
+                            <i></i>
+                            <?php echo CHtml::link( Yii::t( 'global', 'put_course' ), array( '/courses/create' ) ) ?>
+                        </h1>
 			
 		</div> <!-- /container -->
 		
