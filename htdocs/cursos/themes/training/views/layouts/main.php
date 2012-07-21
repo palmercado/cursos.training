@@ -103,7 +103,7 @@
                                                 <input type="text" placeholder="Nombre" />
                                                 <input type="text" placeholder="Correo@dominio.com" />
                                                 <textarea placeholder="Duda o comentario" class="no-resize"></textarea><br />
-                                                <input type='submit' class="btn btn-warning" style="margin-right: 59px;" value="Enviar" />
+                                                <input type='submit' class="btn btn-inverse" style="margin-right: 59px;" value="Enviar" />
                                             </form>
                                         </div>
 					
@@ -127,7 +127,7 @@
 
                                                     <input type="text" name="subscribe_email" placeholder="correo@dominio" style="width:205px;">
                                                     <br />
-                                                    <input type="submit" class="btn btn-warning" value="Suscribete" />
+                                                    <input type="submit" class="btn btn-inverse" value="Suscribete" />
                                             </form>
                                         </div>
 					

@@ -5,54 +5,37 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<div class='alert alert-info'><?php echo Yii::t( 'global', 'fields_required' ) ?></div>
 
-	<?php echo $form->errorSummary($model); ?>
+	<div class="alert alert-error" style="display: <?php echo $model->isDisplayErrors() ?>;"><?php echo $form->errorSummary($model); ?></div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'category_id'); ?>
-		<?php echo $form->textField($model,'category_id',array('size'=>11,'maxlength'=>11)); ?>
-		<?php echo $form->error($model,'category_id'); ?>
+	<div class="control-group <?php echo $model->isError( 'category_id' ) ?>">
+		<?php echo $form->dropDownList($model,'category_id', $model->getCategories(), array( 'style' => 'width: 568px;', 'prompt' => $model->getAttributeLabel( 'category_id' ) )); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'name'); ?>
-		<?php echo $form->textField($model,'name'); ?>
-		<?php echo $form->error($model,'name'); ?>
+	<div class="control-group <?php echo $model->isError( 'name' ) ?>">
+		<?php echo $form->textField($model,'name', array( 'size' => 78, 'placeholder' => $model->getAttributeLabel( 'name' ) )); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'description'); ?>
-		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'description'); ?>
+	<div class="control-group <?php echo $model->isError( 'description' ) ?>">
+		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=> 76, 'placeholder' => $model->getAttributeLabel( 'description' ), 'class' => 'no-resize' )); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'target'); ?>
-		<?php echo $form->textArea($model,'target',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'target'); ?>
+	<div class="control-group">
+		<?php echo $form->textArea($model,'target',array('rows'=>6, 'cols'=>76, 'placeholder' => $model->getAttributeLabel( 'target' ), 'class'   => 'no-resize' )); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'enabled'); ?>
-		<?php echo $form->textField($model,'enabled'); ?>
-		<?php echo $form->error($model,'enabled'); ?>
+	<div class="control-group <?php echo $model->isError( 'place_id' ) ?>">
+		<?php echo $form->dropDownList($model,'place_id', $model->getPlaces(), array('style' => 'width: 420px', 'prompt' => $model->getAttributeLabel( 'place_id' ) )); ?>
+                &nbsp;<span><i class='icon-plus'></i><?php echo CHtml::link( Yii::t( 'courses', 'create_place' ), array( '/admin/places' ) ) ?></span>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'created_at'); ?>
-		<?php echo $form->textField($model,'created_at',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'created_at'); ?>
+	<div class="control-group">
+		<?php echo $form->checkbox($model,'enabled'); ?>&nbsp;&nbsp;<?php echo $model->getAttributeLabel( 'enabled' ) ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'updated_at'); ?>
-		<?php echo $form->textField($model,'updated_at',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'updated_at'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div class="buttons">
+		<?php echo CHtml::submitButton($model->isNewRecord ? Yii::t( 'courses', 'create' ) : Yii::t( 'courses', 'update' ), array( 'class' => 'btn btn-primary') ); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

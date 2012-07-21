@@ -1,9 +1,9 @@
 <?php $this->beginContent('//layouts/main'); ?>
-<div class="span-19">
 	<div id="content">
+            <div class='span6'>
 		<?php echo $content; ?>
-	</div><!-- content -->
-</div>
+            </div>
+            <div class='span5'>
 <div class="span-5 last">
 	<div id="sidebar">
 	<?php
@@ -16,6 +16,6 @@
 		));
 		$this->endWidget();
 	?>
-	</div><!-- sidebar -->
-</div>
+            </div>
+	</div><!-- content -->
 <?php $this->endContent(); ?>

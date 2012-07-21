@@ -75,12 +75,12 @@ class Courses extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'category_id' => Yii::t( 'default', 'select_category' ),
-			'name' => Yii::t( 'default', 'name' ),
-			'description' => Yii::t( 'default', 'description' ),
-			'target' => Yii::t( 'default', 'target' ),
-			'enabled' => Yii::t( 'default', 'enabled' ),
+			'id' => Yii::t( 'courses', 'id' ),
+			'category_id' => Yii::t( 'courses', 'category' ),
+			'name' => Yii::t( 'courses', 'name' ),
+			'description' => Yii::t( 'courses', 'description' ),
+			'target' => Yii::t( 'courses', 'target' ),
+			'enabled' => Yii::t( 'courses', 'enabled' ),
 			'created_at' => '', //hidden
 			'updated_at' => '', //hidden
 		);

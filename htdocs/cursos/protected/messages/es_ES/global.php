@@ -36,5 +36,8 @@ return array(
     'tos'                   => 'Términos y Condiciones',
     'pop'                   => 'Políticas de Privacidad',
     'put_course'            => 'Proponer <br />un curso',
+    'yes'                   => 'Si',
+    'no'                    => 'No',
+    'fields_required'       => 'Campos enmarcados en dorado son requeridos',
 );
 ?>
