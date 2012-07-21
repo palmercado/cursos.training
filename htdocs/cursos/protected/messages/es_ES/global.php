@@ -35,6 +35,6 @@ return array(
     'licence'               => 'Licencia',
     'tos'                   => 'Términos y Condiciones',
     'pop'                   => 'Políticas de Privacidad',
-    'put_course'            => 'Proponer un curso',
+    'put_course'            => 'Proponer <br />un curso',
 );
 ?>
