@@ -44,9 +44,9 @@ Y sobre todo, aprenderás que el conocimiento es la clave del éxito de todo bue
 - Creando una Shell.
 </pre>
 <h3>Descargas</h3>
-<a href="<?php echo Yii::app()->baseUrl ?>/downloads/Hacking SQLi.pptx"></a>
+<a href="<?php echo Yii::app()->baseUrl ?>/downloads/Hacking SQLi.pptx">Hacking SQLi.pptx</a>
 <br />
-<a href="<?php echo Yii::app()->baseUrl ?>/downloads/Hacking SQLi.ppt"></a>
+<a href="<?php echo Yii::app()->baseUrl ?>/downloads/Hacking SQLi.ppt">Hacking SQLi.ppt</a>
 <h3>Prácticas</h3>
 <br />
 <div class="alert alert-block">Para realizar este ejercicio primeramente deberás identificarte en: <a href="<?php echo CHtml::normalizeUrl( array( '/site/login/' ) ) ?>"><?php echo CHtml::normalizeUrl( array( '/site/login/' ) ) ?>.</a> con el nombre de usuario y contraseña que te proporciono algún miembro del staff. </div>
