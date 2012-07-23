@@ -631,6 +631,7 @@ input {
 	margin: 0 0 0 20px;
 }
 
+.grid-0 { width: 30px; }
 .grid-1 { width: 70px; margin-left: 10px; display: inline-block; float:none; }
 .grid-2 { width: 130px; }
 .grid-3 { width: 193px; }
@@ -787,7 +788,7 @@ input {
 #legal ul > li:last-child {border-right: 0px;}
 
 .no-resize{resize: none;}
-form.contact input:not([type="submit"]), form.contact textarea{width:255px;}
+form.contact input:not([type="submit"]), form.contact textarea{width:302px;}
 
 form.contact input[type="submit"]{float:right;}
 
@@ -795,7 +796,7 @@ form.contact input[type="submit"]{float:right;}
 #header h1#suggest-course > i { background: url(../images/focus_green.png) no-repeat; display: block; height: 40px; width:23px; top: 15px; left: 15px;z-index: 1; position:absolute; }
 #header h1#suggest-course > a {color: #046; font:bold 14px 'Myriad Pro'; padding: 22px 5px 0 50px; word-break: break-all; }
 
-form.contact input[type="submit"], form.suscribe input[type="submit"]{float:right; width: auto;}
+form.contact input[type="submit"], form.suscribe input[type="submit"]{float:right; width: auto;margin-right: 0px;}
 
 #categories > div.graybar { height: 42px; margin-top: 10px;  }
 
@@ -808,3 +809,17 @@ form.contact input[type="submit"], form.suscribe input[type="submit"]{float:righ
 #categories div.course-container { clear:both; margin-top: 15px; }
 
 #categories div.course-item { border: 1px dotted #CCC; padding: 10px; }
+
+.show-comment-suggest { background: url(../images/comments.png) no-repeat; width: 40px; height: 34px; display:block; float: left; padding-left: 10px; }
+
+.follow { background: url(../images/group_social.png) no-repeat; width: 40px; height: 34px; display:block; float:left; margin-right: 10px; }
+
+.grid-0 > a.icons-tumblr { background: url(../images/tumblr.png) no-repeat; display:block; height: 39px;width: 40px; }
+.grid-0 > a.icons-facebook { background: url(../images/facebook.png) no-repeat; display:block; height: 39px;width: 40px; }
+.grid-0 > a.icons-twitter { background: url(../images/twitter.png) no-repeat; display:block; height: 39px;width: 40px; }
+
+.clear { clear: both; }
+
+div.divider-news { margin-top: 20px; margin-bottom:20px; background:url(../images/divider-news-networks.png) no-repeat -3px 0px; height:7px; }
+
+.suscribe-icon { background: url(../images/messages.png) no-repeat; width: 40px; height: 34px; display:block; float:left; margin-right: 10px; }
