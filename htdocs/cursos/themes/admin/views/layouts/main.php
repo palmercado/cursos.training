@@ -37,7 +37,11 @@
   </head>
 
 <body>
-
+<script>
+    its.vars = {};
+    its.vars[ 'base_url' ] = '<?php echo Yii::app()->baseUrl; ?>';
+</script>
+    
 <div class="navbar navbar-fixed-top">
 	
 	<div class="navbar-inner">

@@ -8,9 +8,9 @@ var its = its || {};
             options = options || {};
             return {
                 //Se pasa el id del curso al que se pretende asignar el instructor
-                showDialog: function( )
+                showDialog: function( obj )
                 {
-                    its.createTemplate( templates.places.modal );
+                    its.templates.createTemplate( templates.places.modal, obj.attr( 'href' ) );
                 }
             };
         }
@@ -31,15 +31,3 @@ var its = its || {};
         return _static;
     };
 })(jQuery);
-
-
-jQuery().ready(function(){
-    its.courses().get();
-});
-
-function showDialogInstructor()
-{
-    its.courses().get().showDialogInstructor({courseId: 1});
-}
-
-

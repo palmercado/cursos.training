@@ -8,7 +8,7 @@ var its = its || {};
             options = options || {};
             return {
                 //Se pasa el id del curso al que se pretende asignar el instructor
-                showDialog: function( data )
+                showDialog: function( data, obj )
                 {
                     data.courseId = parseInt( data.courseId ) || parseInt( data.courseId );
                     
@@ -17,7 +17,7 @@ var its = its || {};
                         return false; //Si no hay un id de curso no se puede continuar
                     }
                     
-                    its.createTemplate( templates.instructors.modal );
+                    its.templates.createTemplate( templates.instructors.modal, obj.attr( 'href' ) );
                 }
             };
         }

@@ -7,25 +7,28 @@ var templates = {
     places: { modal: '<div class="modal hide" id="modal"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">×</button><h3>' + its.lang[ 'places' ][ 'create' ] + '</h3></div><div class="modal-body"><p>{contentHTML}</p></div><div class="modal-footer"><a href="#" class="btn" data-dismiss="modal">' + its.lang[ 'places' ][ 'close' ] + '</a><a href="#" class="btn btn-primary">' + its.lang[ 'places' ][ 'save' ] + '</a></div></div>' }
 };
 
+its.templates = {};
+
 (function($){
-    its.createTemplate = function( templatesHTML )
+    its.templates.createTemplate = function( templateHTML, urlText )
     {
             if($( '#modal' ))
                 $( '#modal' ).remove();
             
-            
-            
-            /*var templatesHTML = its.parserTemplate( templateName );*/
-            
-            $( 'body' ).append( templatesHTML );
-            $( '#modal' ).modal();
+            $.ajax(
+            {
+                url: urlText + '/ajax/true'
+            }).done(function( data ) 
+            {
+                $( 'body' ).append( templateHTML.replace( '{contentHTML}', data ) );
+                $( '#modal' ).modal('toggle');
+                its.templates.initEvents();
+            });
     }
-    
-    its.parserTemplate = function( templateName )
-    {
-            var contentHTML = templates[templateName][ 'modal' ];
-            var contentURL  = templates[templateName][ 'url' ];
-            
-            contentHTML.replace( '/{contentHTML}/i', content )
+    its.templates.initEvents = function( )
+    {            
+            $('#modal').on('hidden', function( e )
+            {
+            });
     }
 })(jQuery);

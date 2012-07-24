@@ -7,14 +7,28 @@ var its = its || {};
         {
             options = options || {};
             return {
-                //Se pasa el id del curso al que se pretende asignar el instructor
-                showDialogInstructor: function( data )
+                initEvents: function()
                 {
-                    its.instructors().get().showDialog( data );
+                    $( '#showPlaces, #showInstructors' ).unbind();
+                    
+                    $( '#showPlaces' ).click( function( e ) {
+                        its.courses().get().showDialogPlace(jQuery( this ));
+                        e.preventDefault();
+                    });
+                    
+                    $( '#showInstructors' ).click( function( e ) {
+                        its.courses().get().showDialogInstructor({courseId: 1}, jQuery( this ));
+                        e.preventDefault();
+                    });
                 },
-                showDialogPlace: function( data )
+                //Se pasa el id del curso al que se pretende asignar el instructor
+                showDialogInstructor: function( data, obj )
                 {
-                    its.places().get().showDialog( data );
+                    its.instructors().get().showDialog( data, obj );
+                },
+                showDialogPlace: function( obj )
+                {
+                    its.places().get().showDialog( obj );
                 }
             };
         }
@@ -27,6 +41,7 @@ var its = its || {};
                 if( instance === undefined )
                 {
                     instance = new Courses( options );
+                    instance.initEvents();
                 }
                 return instance;
             }
@@ -40,14 +55,3 @@ var its = its || {};
 jQuery().ready(function(){
     its.courses().get();
 });
-
-function showDialogInstructor()
-{
-    its.courses().get().showDialogInstructor({courseId: 1});
-}
-
-
-function showDialogPlace()
-{
-    its.courses().get().showDialogPlace({courseId: 1});
-}

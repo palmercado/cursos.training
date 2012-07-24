@@ -27,13 +27,13 @@
 
 	<div class="control-group <?php echo $model->isError( 'place_id' ) ?>">
 		<?php echo $form->dropDownList($model,'place_id', $model->getPlaces(), array('style' => 'width: 420px', 'prompt' => $model->getAttributeLabel( 'place_id' ) )); ?>
-                &nbsp;<span><i class='icon-plus'></i><?php echo CHtml::link( Yii::t( 'courses', 'create_place' ), 'javascript:showDialogPlace(this);' ) ?></span>
+                &nbsp;<span><i class='icon-plus'></i><?php echo CHtml::link( Yii::t( 'courses', 'create_place' ), array( '/admin/places/create' ), array( 'id'  => 'showPlaces' ) ) ?></span>
 	</div>
         
 	<div class="control-group">
             <fieldset>
                 <legend>Instructores</legend>
-                <a href="javascript:showDialogInstructor(this);"><span class="icon-plus"></span><?php echo Yii::t( 'instructors', 'select_title' ) ?></a>
+                <a href="<?php echo CHtml::normalizeUrl( array( '/admin/instructors/create' ) ) ?>" id='showInstructors'><span class="icon-plus"></span><?php echo Yii::t( 'instructors', 'select_title' ) ?></a>
             </fieldset>
 	</div>
 
