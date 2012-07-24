@@ -18,7 +18,17 @@
     
     <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/pages/dashboard.css" rel="stylesheet">   
     <link href="<?php echo Yii::app()->baseUrl; ?>/css/global.css" rel="stylesheet" />
-
+    
+    <script src="<?php echo Yii::app()->baseUrl; ?>/js/jquery-1.7.2.min.js"></script>
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap.min.js"></script>
+    <script>
+        jQuery.noConflict();
+    </script>
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/its.lang.js"></script>
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/its.templates.js"></script>
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/its.instructors.js"></script>
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/its.places.js"></script>
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/its.courses.js"></script>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
